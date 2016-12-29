@@ -42,4 +42,5 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 export PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
+alias dotconf='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
+alias dotrepo='http://github.com/fishfurbanter/dotfiles'

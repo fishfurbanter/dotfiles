@@ -24,7 +24,7 @@
 #
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
-command=/usr/lib/i3blocks/$BLOCK_NAME
+command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
@@ -34,12 +34,14 @@ markup=none
 # The second parameter overrides the mixer selection
 # See the script for details.
 [volume]
-label=VOL
+#label=VOL
 #label=♪
+label=
 instance=Master
 #instance=PCM
-interval=once
+interval=1
 signal=10
+command=/home/andecy/.config/i3/scripts/volume 5 pulse
 
 # Memory usage
 #
@@ -49,11 +51,11 @@ label=MEM
 separator=false
 interval=30
 
-[memory]
-label=SWAP
-instance=swap
-separator=false
-interval=30
+#[memory]
+#label=SWAP
+#instance=swap
+#separator=false
+#interval=30
 
 # Disk usage
 #
@@ -61,7 +63,8 @@ interval=30
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
 [disk]
-label=HOME
+#label=HOME
+label=
 #instance=/mnt/data
 interval=30
 
@@ -69,19 +72,21 @@ interval=30
 #
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-[iface]
-#instance=wlan0
+#[iface]
+instance=enp8s1
 color=#00FF00
 interval=10
 separator=false
+command=/home/andecy/.config/i3/scripts/iface -6
 
 [wifi]
 #instance=wlp3s0
-interval=10
-separator=false
+#label=
+#interval=10
+#separator=false
 
 [bandwidth]
-#instance=eth0
+instance=eth0
 interval=5
 
 # CPU usage
@@ -90,27 +95,29 @@ interval=5
 # see the script for details.
 [cpu_usage]
 label=CPU
-interval=1
+interval=10
 min_width=CPU: 100.00%
 #separator=false
 
-#[load_average]
-#interval=10
+[load_average]
+label=
+interval=10
 
 # Battery indicator
 #
 # The battery instance defaults to 0.
 [battery]
-label=BAT
-#label=⚡
+#label=BAT
+label=⚡
 #instance=1
 interval=30
 
 # Date Time
 #
 [time]
+label=
 command=date '+%Y-%m-%d %H:%M:%S'
-interval=5
+interval=1
 
 # Generic media player support
 #
