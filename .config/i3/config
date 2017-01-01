@@ -92,42 +92,46 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-set $ws1 "Firefox  |"
-set $ws2 "Bash &#xf120; |"
-set $workspace3 "3"
-set $workspace4 "4"
-set $workspace5 "5"
-set $workspace6 "6"
-set $workspace7 "7"
-set $workspace8 "8"
-set $workspace9 "9"
-set $workspace10 "10"
+set $ws1 " 1 Firefox     |"
+set $ws2 " 2 Bash &#xf120;   |"
+set $ws3 " 3 Videos &#xf144;   |"
+set $ws4 " 4 Books &#xf02d;   |"
+set $ws5 " 5 Social &#xf0c0;   |"
+set $ws6 " 6 Email &#xf2b6;   |"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "TvScreen &#xf26c;   |"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# Program bindngs
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+d exec thunderbird
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -176,8 +180,10 @@ mode "resize" {
 }
 
 ### Assign programs to workspaces ###
-assign [class="FireFox"] $ws1
+assign [class="Firefox"] $ws1
+assign [class="Thunderbird"] $ws6
 assign [class="URxvt"] $ws2
+
 
 
 bindsym $mod+r mode "resize"
@@ -185,7 +191,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-status_command i3blocks -c $HOME/.config/i3/i3blocks.conf.c
+status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 colors {
 background $bg-color
 separator #757575
@@ -197,3 +203,6 @@ urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }
 exec_always --no-startup-id feh --bg-scale /home/andecy/.wallpaper.jpg
 exec --no-startup-id compton -f
+exec_always --no-startup-id firefox
+
+hide_edge_borders both
