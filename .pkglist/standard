@@ -27,3 +27,5 @@ xscreensaver
 obconf
 python-pip
 postgresql
+rsync
+linux-tools-meta

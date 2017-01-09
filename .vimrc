@@ -39,3 +39,4 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set number
 let g:pymode_folding = 0
+let g:pymode_rope_complete_on_dot = 0

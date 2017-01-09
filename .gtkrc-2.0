@@ -1,16 +1,18 @@
-# -- THEME AUTO-WRITTEN DO NOT EDIT
-include "/usr/share/themes/Arc-Dark/gtk-2.0/gtkrc"
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-style "user-font" {
-	font_name = "Fira Code 11"
-}
-
-widget_class "*" style "user-font"
-
+include "/home/andecy/.gtkrc-2.0.mine"
+gtk-theme-name="Arc-Dark"
+gtk-icon-theme-name="Paper-Mono-Dark"
 gtk-font-name="Fira Code 11"
-
-
-
-include "/home/andecy/.gtkrc.mine"
-
-# -- THEME AUTO-WRITTEN DO NOT EDIT
+gtk-cursor-theme-name="Adwaita"
+gtk-cursor-theme-size=0
+gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=1
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
