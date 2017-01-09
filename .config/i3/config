@@ -94,11 +94,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 set $ws1 " 1 Firefox     |"
 set $ws2 " 2 Bash &#xf120;   |"
-set $ws3 " 3 Videos &#xf144;   |"
+set $ws3 " 3 File Manager &#xf07c;   |"
 set $ws4 " 4 Books &#xf02d;   |"
 set $ws5 " 5 Social &#xf0c0;   |"
 set $ws6 " 6 Email &#xf2b6;   |"
-set $ws7 " 7 File Manager &#xf07c;   |"
+set $ws7 " 7 Videos &#xf144;   |"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "TvScreen &#xf26c;   |"
@@ -183,8 +183,8 @@ mode "resize" {
 assign [class="Firefox"] $ws1
 assign [class="Thunderbird"] $ws6
 assign [class="URxvt"] $ws2
-assign [class="Pcmanfm"] $ws7
-
+assign [class="Pcmanfm"] $ws3
+assign [class="Evince"] $ws4
 
 
 bindsym $mod+r mode "resize"
@@ -202,10 +202,22 @@ inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }	
 }
+
+### Start feh (wallpaper)
 exec_always --no-startup-id feh --bg-scale /home/andecy/.wallpaper.jpg
+
+### ??
 exec --no-startup-id compton -f
+
+## Start firefox on startup
 exec_always --no-startup-id firefox
 
+
+### Hide ugly borders
 hide_edge_borders both
+
+### Bind file manager
 bindsym $mod+m exec pcmanfm
+
+### Keyboard layout settings
 exec --no-startup-id "setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle"

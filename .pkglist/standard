@@ -21,7 +21,6 @@ pavucontrol
 subversion
 unzip
 smartmontools
-pcmanfm-gtk3
 thunderbird
 xscreensaver
 obconf
@@ -29,3 +28,4 @@ python-pip
 postgresql
 rsync
 linux-tools-meta
+pcmanfm
