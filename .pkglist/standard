@@ -29,3 +29,4 @@ postgresql
 rsync
 linux-tools-meta
 pcmanfm
+aws-cli
