@@ -90,3 +90,5 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 export CONFIG_UPSTREAM='http://github.com/fishfurbanter/dotfiles'
+source .inputrc
+set -o vi
