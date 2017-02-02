@@ -1,5 +1,5 @@
 !Fonts
-URxvt.font: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
+URxvt.font: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11,xft:Icons:size=11
 URxvt.boldFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 URxvt.italicFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 URxvt.boldItalicFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
