@@ -3,6 +3,7 @@ URxvt.font: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=t
 URxvt.boldFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 URxvt.italicFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 URxvt.boldItalicFont: xft:Droid Sans Mono Dotted for Powerline:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
+URxvt*letterSpace: 0
 
 
 !URxvt*termName: xterm-256color
