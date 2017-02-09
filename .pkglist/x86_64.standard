@@ -12,7 +12,6 @@ openbox
 pulseaudio
 xorg
 wget
-base-devel
 htop
 lynx
 nmap
@@ -29,7 +28,3 @@ postgresql
 rsync
 linux-tools-meta
 pcmanfm
-aws-cli
-rclone
-pv
-xarchiver-gtk2
