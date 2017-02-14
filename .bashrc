@@ -40,11 +40,17 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-export PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:$PATH
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-alias dotconf='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
-alias dotrepo='http://github.com/fishfurbanter/dotfiles'
+
+#Dotfiles git repo alias
 alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
+
+#Dotfiles upstream repository
+export CONFIG_UPSTREAM='http://github.com/fishfurbanter/dotfiles'
+
+#Push dotfiles to remote
+alias config-push='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy push --set-upstream $CONFIG_UPSTREAM'
+
+#History size
 HISTSIZE=10000
 HISTFILESIZE=100000
 
@@ -89,4 +95,3 @@ export SCM_CHECK=true
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-export CONFIG_UPSTREAM='http://github.com/fishfurbanter/dotfiles'

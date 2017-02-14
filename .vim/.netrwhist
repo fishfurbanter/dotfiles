@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/etc/pacman.d'
-let g:netrw_dirhist_2='/home/andecy/actual/mozu/src'
-let g:netrw_dirhist_3='/home/andecy/.bash_it'
-let g:netrw_dirhist_4='/home/andecy/.bash_it/themes'
-let g:netrw_dirhist_5='/home/andecy/.bash_it/themes/bobby'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/andecy/actual/website'
+let g:netrw_dirhist_2='/home/andecy/actual/website/content'
+let g:netrw_dirhist_3='/home/andecy/actual/website'
+let g:netrw_dirhist_4='/home/andecy/actual/website/theme/bootstrap'
+let g:netrw_dirhist_5='/home/andecy/actual/website/theme/bootstrap/static'
+let g:netrw_dirhist_6='/home/andecy/actual/website/theme/bootstrap'
+let g:netrw_dirhist_7='/home/andecy/actual/website/theme/bootstrap/static'
+let g:netrw_dirhist_8='/home/andecy/actual/website/theme/bootstrap'
+let g:netrw_dirhist_9='/home/andecy/actual/website/theme/bootstrap/templates'
