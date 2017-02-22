@@ -103,3 +103,5 @@ let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the c
 "Example custom highlighting
 "let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
 "let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
+set expandtab
+set tabstop=2
