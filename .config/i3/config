@@ -11,6 +11,7 @@
 
 set $mod Mod4
 
+new_window pixel1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Droid Sans Mono Dotted For Powerline, Font Awesome 11
@@ -141,6 +142,24 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+set_from_resource $xdb_bg background #FFFFFF
+set_from_resource $xdb_fg foreground #FFFFFF
+set_from_resource $xdb_0 color0 #FFFFFF
+set_from_resource $xdb_1 color1 #FFFFFF
+set_from_resource $xdb_2 color2 #FFFFFF
+set_from_resource $xdb_3 color3 #FFFFFF
+set_from_resource $xdb_4 color4 #FFFFFF
+set_from_resource $xdb_5 color5 #FFFFFF
+set_from_resource $xdb_6 color6 #FFFFFF
+set_from_resource $xdb_7 color7 #FFFFFF
+set_from_resource $xdb_8 color8 #FFFFFF
+set_from_resource $xdb_9 color9 #FFFFFF
+set_from_resource $xdb_10 color10 #FFFFFF
+set_from_resource $xdb_11 color11 #FFFFFF
+set_from_resource $xdb_12 color12 #FFFFFF
+set_from_resource $xdb_13 color13 #FFFFFF
+set_from_resource $xdb_14 color14 #FFFFFF
+set_from_resource $xdb_15 color15 #FFFFFF
 
 set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
@@ -195,8 +214,8 @@ bindsym $mod+r mode "resize"
 bar {
 status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 colors {
-background $bg-color
-separator #757575
+background $xdb_bg
+separator $xdb_4
 #border             background         text
 focused_workspace  $bg-color          $bg-color          $text-color
 inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
