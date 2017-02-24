@@ -161,11 +161,13 @@ set_from_resource $xdb_13 color13 #FFFFFF
 set_from_resource $xdb_14 color14 #FFFFFF
 set_from_resource $xdb_15 color15 #FFFFFF
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
+set $almost              #ced4e3
+set $bg-color 	         #44475a
+set $inactive-bg-color   #6272a4
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
+set $almost_1            #4a5882
 
 # window colors
 # #                       border              background         text                 indicator
@@ -214,11 +216,11 @@ bindsym $mod+r mode "resize"
 bar {
 status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 colors {
-background $xdb_bg
+background $bg-color
 separator $xdb_4
-#border             background         text
-focused_workspace  $bg-color          $bg-color          $text-color
-inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+                   #border             background         text
+focused_workspace  $bg-color          $bg-color          $almost
+inactive_workspace $bg-color          $bg-color          $almost_1
 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }	
 }
@@ -243,3 +245,6 @@ bindsym $mod+m exec pcmanfm
 bindsym $mod+t exec thunderbird
 ### Keyboard layout settings
 exec --no-startup-id "setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle"
+
+### i3lock
+bindsym $mod+c exec $HOME/.config/i3/scripts/lock.sh
