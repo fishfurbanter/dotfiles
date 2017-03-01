@@ -1,14 +1,25 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-"set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Show line numbers
+set number
 
+" Syntax and colorscheme
 syntax on
 color dracula
+
+" Tab behavior
+set expandtab
+set tabstop=2
+
+" Vundle comments and configuration
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -35,41 +46,53 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
+" filetype plugin on
+" 
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"Show line numbers
-set number
+" Polyglot configuration.
+" 
+" Disabled languages
+let g:polyglot_disabled = ['python']
 
-"Disable python code folding
+
+
+""""""""""""""""""""
+" Pymode configuration 
+"
+""""
+
+" Disable python code folding
 let g:pymode_folding = 0
 
-"Disable pymode autocompletion
+" Disable pymode autocompletion
 let g:pymode_rope_complete_on_dot = 0
 
-"Ctrl + n for nerdtree toggle
-map <C-n> :NERDTreeToggle<CR>
 
+
+"""""""""""""""""""""""
+" Nerdtree configuration 
+"
+""""
+
+" Ctrl + n for nerdtree toggle
+map <C-n> :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
-
-
-"Nerdtree file highlight
+" Nerdtree file highlight
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 
-"Enable nerdtree folder highlight
+" Enable nerdtree folder highlight
 let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
-
-"Nerdtree highlight colors
+" Nerdtree highlight colors
 let s:brown = "905532"
 let s:aqua =  "3AFFDB"
 let s:blue = "689FB6"
@@ -89,8 +112,7 @@ let s:white = "FFFFFF"
 let s:rspec_red = 'FE405F'
 let s:git_orange = 'F54D27'
 
-
-"Custom file highlighting
+" Custom file highlighting
 let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExtensionHighlightColor['css'] = s:orange" sets the color of css files to blue
 
@@ -100,8 +122,3 @@ let g:NERDTreeExtensionHighlightColor['py'] = s:blue" sets the color of css file
 let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
 
-"Example custom highlighting
-"let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
-"let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
-set expandtab
-set tabstop=2

@@ -37,7 +37,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start Rofi (a program launcher)
-bindsym $mod+d exec rofi -show run 
+bindsym $mod+d exec rofi -show run -display-run " "
 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -161,13 +161,11 @@ set_from_resource $xdb_13 color13 #FFFFFF
 set_from_resource $xdb_14 color14 #FFFFFF
 set_from_resource $xdb_15 color15 #FFFFFF
 
-set $almost              #ced4e3
-set $bg-color 	         #44475a
-set $inactive-bg-color   #6272a4
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
-set $almost_1            #4a5882
 
 # window colors
 # #                       border              background         text                 indicator
@@ -217,10 +215,11 @@ bar {
 status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 colors {
 background $bg-color
-separator $xdb_4
+separator #757575
+
                    #border             background         text
-focused_workspace  $bg-color          $bg-color          $almost
-inactive_workspace $bg-color          $bg-color          $almost_1
+focused_workspace  $bg-color          $bg-color          $text-color
+inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }	
 }
