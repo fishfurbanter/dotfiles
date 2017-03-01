@@ -21,3 +21,7 @@ pacaur
 vim-devicons
 nerd-fonts-complete
 rxvt-unicode-patched
+tmux-bash-completion
+qtile
+transmission-qt
+python-maybe

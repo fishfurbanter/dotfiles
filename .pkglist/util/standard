@@ -28,3 +28,4 @@ postgresql
 rsync
 linux-tools-meta
 pcmanfm
+tmux
