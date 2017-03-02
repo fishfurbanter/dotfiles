@@ -1,3 +1,8 @@
+
+########################
+# Bash-it configuration
+########################
+
 # Path to the bash it configuration
 export BASH_IT="/home/andecy/.bash_it"
 
@@ -40,11 +45,12 @@ export SCM_CHECK=true
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-#Dotfiles git repo alias
-alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
 
-#Dotfiles upstream repository
-#export CONFIG_UPSTREAM='http://github.com/fishfurbanter/dotfiles'
+
+
+
+
+PATH=$PATH:$HOME/.utils
 
 #History size
 HISTSIZE=10000
@@ -56,3 +62,9 @@ export PROJECT_HOME=~/actual
 #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
 source /bin/virtualenvwrapper.sh
 source .bash_profile
+
+
+#Dotfiles git repo alias
+alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
+
+
