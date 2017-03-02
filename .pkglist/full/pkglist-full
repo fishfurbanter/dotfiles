@@ -56,3 +56,5 @@ tmux-bash-completion
 qtile
 transmission-qt
 python-maybe
+scrot
+imagemagick

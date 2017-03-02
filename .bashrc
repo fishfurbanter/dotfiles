@@ -60,6 +60,7 @@ HISTFILESIZE=100000
 export WORKON_HOME=~/.envs
 export PROJECT_HOME=~/actual
 #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /bin/virtualenvwrapper.sh
 source .bash_profile
 
