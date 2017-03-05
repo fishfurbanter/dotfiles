@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Wallpaper directory
+export WALLPAPER_DIR="/home/$USER/.wallpapers"
+
 # Override .bash_it/themes/base.theme.bash
 function py_interp_prompt {
   py_version=$(python --version 2>&1 | awk '{print " Py-"$2;}') || return
