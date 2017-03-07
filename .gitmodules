@@ -1,0 +1,3 @@
+[submodule ".config/qtile"]
+	path = .config/qtile
+	url = http://github.com/fishfurbanter/qtile-config
