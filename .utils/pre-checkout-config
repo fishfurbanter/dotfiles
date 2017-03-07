@@ -1,0 +1,3 @@
+#!/bin/bash
+
+egrep "\s+\." error.log | xargs -I{} mv {} .config-back
