@@ -27,13 +27,13 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'klen/python-mode'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-surround'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 
 
 " The following are examples of different formats supported.
