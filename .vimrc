@@ -6,11 +6,14 @@ set number
 
 " Syntax and colorscheme
 syntax on
-color dracula
 
 " Tab behavior
 set expandtab
 set tabstop=2
+
+
+
+" ----------------------
 
 " Vundle comments and configuration
 " alternatively, pass a path where Vundle should install plugins
@@ -19,7 +22,7 @@ set tabstop=2
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
+" ========================================================
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -34,13 +37,18 @@ Plugin 'scrooloose/syntastic'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'elzr/vim-json'
+Plugin 'crusoexia/vim-dracula'
 
+" Plugins that are not currently in use
+" -------------------------------------
+" Plugin 'chriskempson/base16-vim'
+" Plugin 'dracula/vim'
 
+" =========================================================
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-
-
+" plugin on GitHub repo -----------------------------------
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,11 +59,33 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"-------------------------
+
+set t_Co=256
+colorscheme dracula
+
+"-----------------
+" Bind JSON to different colorscheme
+" autocmd BufEnter *.json colorscheme default
+" Vim-JSON plugin
+let g:vim_json_syntax_conceal = 0
+au BufRead,BufNewFile,BufReadPost *.json set syntax=json
+"------------------
+
+"------------------
 " Polyglot configuration.
 " 
 " Disabled languages
-let g:polyglot_disabled = ['python']
-
+let g:polyglot_disabled = ['python', 'json']
+"------------------
+"
+""
+"""
+""""
+"""""
+""""""
+"""""""
+" ===========================================
 
 """"""""""""""""""""
 " Pymode configuration 
@@ -71,11 +101,21 @@ let g:pymode_rope=0
 
 let g:pymode_lint = 0
 
+" ============================================
+"""""""
+"""""
+"""
+"
+"
+""
+"""
+""""
+"""""
+""""""
+"""""""
 """""""""""""""""""""""
 " Nerdtree configuration 
 "
-""""
-
 " Ctrl + n for nerdtree toggle
 map <C-n> :NERDTreeToggle<CR>
 

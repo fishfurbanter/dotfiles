@@ -46,17 +46,26 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 
+####
+# Set vim as the default shell editor
+####
+VISUAL=vim
+EDITOR="$VISUAL"
 
-
-
-
+####
+# Add .utils to path
+####
 PATH=$PATH:$HOME/.utils
 
+####
 #History size
+####
 HISTSIZE=10000
 HISTFILESIZE=100000
 
+####
 # Virtualenv
+####
 export WORKON_HOME=~/.envs
 export PROJECT_HOME=~/actual
 #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
@@ -64,8 +73,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /bin/virtualenvwrapper.sh
 source .bash_profile
 
-
+####
 #Dotfiles git repo alias
+####
 alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
 
 
