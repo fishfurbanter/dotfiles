@@ -38,12 +38,12 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'elzr/vim-json'
-Plugin 'crusoexia/vim-dracula'
+Plugin 'dracula/vim'
+"Plugin 'crusoexia/vim-dracula'
 
 " Plugins that are not currently in use
 " -------------------------------------
 " Plugin 'chriskempson/base16-vim'
-" Plugin 'dracula/vim'
 
 " =========================================================
 " The following are examples of different formats supported.
@@ -76,7 +76,7 @@ au BufRead,BufNewFile,BufReadPost *.json set syntax=json
 " Polyglot configuration.
 " 
 " Disabled languages
-let g:polyglot_disabled = ['python', 'json']
+let g:polyglot_disabled = ['python']
 "------------------
 "
 ""
@@ -97,9 +97,9 @@ let g:pymode_folding = 0
 
 " Disable pymode autocompletion
 let g:pymode_rope_complete_on_dot = 0
-let g:pymode_rope=0
+"let g:pymode_rope=0
 
-let g:pymode_lint = 0
+"let g:pymode_lint = 0
 
 " ============================================
 """""""
