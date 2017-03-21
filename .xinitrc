@@ -1,2 +1,2 @@
-setxkbmap -model pc105 -layout il,us -option grp:alt_shift_toggle
+setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
 exec qtile
