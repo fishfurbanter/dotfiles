@@ -77,5 +77,6 @@ source .bash_profile
 #Dotfiles git repo alias
 ####
 alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
-
-
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+GEM_HOME=$(ruby -e 'print Gem.user_dir')
+eval $(thefuck --alias)
