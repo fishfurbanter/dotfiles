@@ -25,6 +25,7 @@ call vundle#begin()
 " ========================================================
 
 " let Vundle manage Vundle, required
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'klen/python-mode'
@@ -39,6 +40,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'elzr/vim-json'
 Plugin 'dracula/vim'
+Plugin 'vimwiki/vimwiki'
 "Plugin 'crusoexia/vim-dracula'
 
 " Plugins that are not currently in use
@@ -162,3 +164,5 @@ let g:NERDTreeExtensionHighlightColor['py'] = s:blue" sets the color of css file
 let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
 
+" Vimwiki
+source $HOME/vekyll/vekyll.vim
