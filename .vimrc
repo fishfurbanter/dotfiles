@@ -12,6 +12,9 @@ set expandtab
 set tabstop=2
 
 
+set guifont=UbuntuMono\ Nerd\ Font\ 13
+
+
 
 " ----------------------
 
@@ -41,6 +44,8 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'elzr/vim-json'
 Plugin 'dracula/vim'
 Plugin 'vimwiki/vimwiki'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'sjl/tslime.vim'
 "Plugin 'crusoexia/vim-dracula'
 
 " Plugins that are not currently in use
@@ -166,3 +171,27 @@ let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the c
 
 " Vimwiki
 source $HOME/vekyll/vekyll.vim
+
+""""""
+" Rainbow parenthasis
+"
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+"""""
+" Scheme indent
+"
+autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
+
+"""""
+" Tslime
+"
+let g:tslime_ensure_trailing_newlines = 1
+let g:tslime_always_current_session = 1 
+let g:tslime_always_current_window = 1
+let g:tslime_ensure_trailing_newlines = 1
+let g:tslime_normal_mapping = '<localleader>t'
+let g:tslime_visual_mapping = '<localleader>t'
+let g:tslime_vars_mapping = '<localleader>T'

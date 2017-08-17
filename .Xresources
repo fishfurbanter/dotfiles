@@ -1,9 +1,9 @@
 !Fonts
-URxvt.font: xft:DroidSansMonoForPowerline Nerd Font:Regular:size=13:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11,xft:Icons:size=11
-URxvt.boldFont: xft:DroidSansMonoForPowerline Nerd Font:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
-URxvt.italicFont: xft:DroidSansMonoForPowerline Nerd Font:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
-URxvt.boldItalicFont: xft:DroidSansMonoForPowerline Nerd Font:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
-URxvt*letterSpace: 0
+URxvt.font: xft:UbuntuMono Nerd Font:Regular:size=15:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11,xft:Icons:size=11
+!URxvt.boldFont: xft:Droid Sans Mono for Powerline Nerd Font Complete:Book:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
+!URxvt.italicFont: xft:Droid Sans Mono for Powerline Nerd Font Complete:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
+!URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline Nerd Font Complete:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
+URxvt*letterSpace: 1
 ! Dracula Xresources palette
 *.foreground: #E6E6E6
 *.background: #1E1F29

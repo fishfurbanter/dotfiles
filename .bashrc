@@ -71,7 +71,6 @@ export PROJECT_HOME=~/actual
 #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /bin/virtualenvwrapper.sh
-source .bash_profile
 
 ####
 #Dotfiles git repo alias
@@ -80,3 +79,27 @@ alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 GEM_HOME=$(ruby -e 'print Gem.user_dir')
 eval $(thefuck --alias)
+
+
+####
+# Racket SICP Alias
+####
+alias sicp='racket -i neil/sicp -l xrepl'
+
+####
+# Copied from .bash_profile
+####
+alias devt="pushd $HOME/dev/tutorials"
+# Wallpaper directory
+export WALLPAPER_DIR="/home/$USER/.wallpapers"
+
+# Override .bash_it/themes/base.theme.bash
+function py_interp_prompt {
+  py_version=$(python --version 2>&1 | awk '{print " Py-"$2;}') || return
+  echo -e "${PYTHON_THEME_PROMPT_PREFIX}${py_version}${PYTHON_THEME_PROMPT_SUFFIX}"
+}
+
+# Override .bash_it/themes/colors.theme.bash
+function prompt_command() {
+    PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
+}
