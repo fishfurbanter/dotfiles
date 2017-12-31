@@ -53,9 +53,9 @@ VISUAL=vim
 EDITOR="$VISUAL"
 
 ####
-# Add .utils to path
+# Add .utils/bin to path
 ####
-PATH=$PATH:$HOME/.utils
+PATH=$PATH:$HOME/.utils/bin
 
 ####
 #History size

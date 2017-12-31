@@ -9,7 +9,7 @@ syntax on
 
 " Tab behavior
 set expandtab
-set tabstop=2
+set tabstop=4
 
 
 set guifont=UbuntuMono\ Nerd\ Font\ 13

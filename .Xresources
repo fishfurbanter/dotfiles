@@ -4,9 +4,11 @@ URxvt.font: xft:UbuntuMono Nerd Font:Regular:size=15:antialias=true,xft:Symbola:
 !URxvt.italicFont: xft:Droid Sans Mono for Powerline Nerd Font Complete:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 !URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline Nerd Font Complete:Regular:size=12:antialias=true,xft:Symbola:size=10,xft:FontAwesome:size=11
 URxvt*letterSpace: 1
-! Dracula Xresources palette
+Xft*antialias:          true
+
+URxvt.depth: 32
+!!! Dracula Xresources palette
 *.foreground: #E6E6E6
-*.background: #1E1F29
 *.color0:     #000000
 *.color8:     #555555
 *.color1:     #FF5555
@@ -23,6 +25,9 @@ URxvt*letterSpace: 1
 *.color14:    #9AEDFE
 *.color7:     #BBBBBB
 *.color15:    #FFFFFF
+!! Dracula background with transparency [x] for transparency level
+URxvt.background: [90]#1E1F29 
+
 URxvt.scrollBar: false
 
 ! Commented out
@@ -43,3 +48,5 @@ rofi.padding: 50
 rofi.bw: 0
 rofi.font: Droid Sans Mono Dotted For Powerline 16
 rofi.separator-style: solid
+! DZEN
+dzen2.font: xft:Fira Mono for Powerline:style=Regular:pixelsize=16, xft:Noto Emoji, xft:Wuncon Siji

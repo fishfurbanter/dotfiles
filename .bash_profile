@@ -2,7 +2,7 @@
 
 # Keyboard layouts
 #setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
-
+alias cdlpic='cd ~/lpic-lab/lpic-notes/'
 #
 #alias devt="pushd $HOME/dev/tutorials"
 ## Wallpaper directory
