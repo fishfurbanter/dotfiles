@@ -12,11 +12,11 @@ Check to see if i repeat myself..
 #### Planned changes:
 
 - [x] Create qtile layouts, finish qtile keybinding and screens.
-- [ ] Check for problems with config.py seperation
+- [x] Check for problems with config.py seperation
 - [ ] Configure tmux and build a script for autostarting vim as ide.
-- [ ] Seperate ~~qtile~~, urxvt-unicode to submodules for portability.
-- [ ] Configure custom bash-it files (for bobby-python and python prompt).
-- [ ] Seperate .pkglist files further, check for inconsistencies.
+- [x] Seperate ~~qtile~~, urxvt-unicode to submodules for portability.
+- [x] Configure custom bash-it files (for bobby-python and python prompt).
+- [x] Seperate .pkglist files further, check for inconsistencies.
 
 #### Discarded plans:
 

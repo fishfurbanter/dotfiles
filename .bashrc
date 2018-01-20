@@ -55,7 +55,7 @@ EDITOR="$VISUAL"
 ####
 # Add .utils/bin to path
 ####
-PATH=$PATH:$HOME/.utils/bin
+PATH=$PATH:$HOME/.utils/sh
 
 ####
 #History size

@@ -170,7 +170,7 @@ let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
 
 " Vimwiki
-source $HOME/vekyll/vekyll.vim
+" source $HOME/vekyll/vekyll.vim
 
 """"""
 " Rainbow parenthasis
