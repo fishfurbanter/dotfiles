@@ -7,3 +7,6 @@
 [submodule ".pkglist"]
 	path = .pkglist
 	url = http://github.com/fishfurbanter/pkglist-config
+[submodule ".utils"]
+	path = .utils
+	url = http://github.com/fishfurbanter/utils-config
