@@ -10,3 +10,6 @@
 [submodule ".utils"]
 	path = .utils
 	url = http://github.com/fishfurbanter/utils-config
+[submodule ".config/polybar"]
+	path = .config/polybar
+	url = http://github.com/fishfurbanter/polybar-config
