@@ -1,3 +1,6 @@
 [submodule ".config/qtile"]
 	path = .config/qtile
 	url = http://github.com/fishfurbanter/qtile-config
+[submodule ".xmonad"]
+	path = .xmonad
+	url = http://github.com/fishfurbanter/xmonad-config
