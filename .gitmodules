@@ -4,3 +4,6 @@
 [submodule ".xmonad"]
 	path = .xmonad
 	url = http://github.com/fishfurbanter/xmonad-config
+[submodule ".pkglist"]
+	path = .pkglist
+	url = http://github.com/fishfurbanter/pkglist-config
