@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/rainbow_parentheses.vim"]
 	path = .vim/bundle/rainbow_parentheses.vim
 	url = http://github.com/kien/rainbow_parentheses.vim
+[submodule ".bash_it"]
+	path = .bash_it
+	url = http://github.com/Bash-it/bash-it
