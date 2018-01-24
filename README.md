@@ -24,7 +24,7 @@ and it will probably work on any linux system with vim, tmux, bash and urxvt.
 #### Planned changes:
 - [ ] Test different branches for portability
 - [ ] Find a way to deal with nologin shells
-- [ ] fix vim plugin submodule weirdness
+- [x] fix vim plugin submodule weirdness
 
 #### Discarded plans:
 
