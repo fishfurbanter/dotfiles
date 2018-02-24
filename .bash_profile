@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Keyboard layouts
-# setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
+setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
 
 ## Wallpaper directory
 # export WALLPAPER_DIR="/home/$USER/.wallpapers"

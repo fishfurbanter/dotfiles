@@ -64,4 +64,4 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "-------------------------
 colorscheme dracula
-source ~/.vim/custom.vim
+source ~/.vim/plugin-config.vim
