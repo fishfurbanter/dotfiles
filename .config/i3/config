@@ -225,6 +225,7 @@ urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }
 
 ### Start feh (wallpaper)
+# REVIEW42: Hardcoded home directory
 exec_always --no-startup-id feh --bg-scale /home/andecy/.wallpapers/.wallpaper.jpg
 
 ### ??
@@ -243,6 +244,7 @@ bindsym $mod+m exec pcmanfm
 ### Bind Thunderbird
 bindsym $mod+t exec thunderbird
 ### Keyboard layout settings
+# REVIEW42: May expose computer model, not sure
 exec --no-startup-id "setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle"
 
 ### i3lock

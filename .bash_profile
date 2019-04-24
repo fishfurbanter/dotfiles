@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## Keyboard layouts
+# REVIEW42: This could maybe expose your computer model
 setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
 
 ## Wallpaper directory

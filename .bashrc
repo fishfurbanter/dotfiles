@@ -4,6 +4,7 @@
 ########################
 
 # Path to the bash it configuration
+# REVIEW42: It may be better to use $HOME or ~ instead of the full path, so it will work on computers with other home directories and won't expose your username.
 export BASH_IT="/home/andecy/.bash_it"
 
 # Lock and Load a custom theme file
@@ -43,6 +44,7 @@ export SCM_CHECK=true
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load Bash It
+# REVIEW42: I don't see this file in <repo_root>/.bash_it/
 source $BASH_IT/bash_it.sh
 
 
@@ -50,11 +52,13 @@ source $BASH_IT/bash_it.sh
 # Set vim as the default shell editor
 ####
 VISUAL=vim
+# REVIEW42: This may need to be exported
 EDITOR="$VISUAL"
 
 ####
 # Add .utils/bin to path
 ####
+# REVIEW42: I don't see this directory in <repo_root>/.utils/ , maybe it would be better to check if the directory exists before adding it to $PATH
 PATH=$PATH:$HOME/.utils/sh
 
 ####
@@ -70,14 +74,17 @@ export WORKON_HOME=~/.envs
 export PROJECT_HOME=~/actual
 #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# REVIEW42: Maybe it would be better to check if this file exists before sourcing it.
 source /bin/virtualenvwrapper.sh
 
 ####
 #Dotfiles git repo alias
 ####
+# REVIEW42: It may be better to not use a hardcoded git binary path and home directory
 alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 GEM_HOME=$(ruby -e 'print Gem.user_dir')
+# REVIEW42: Maybe you should check if `thefuck' is installed before running this
 eval $(thefuck --alias)
 
 
@@ -91,6 +98,7 @@ alias sicp='racket -i neil/sicp -l xrepl'
 ####
 alias devt="pushd $HOME/dev/tutorials"
 # Wallpaper directory
+# REVIEW42: Maybe it would be better to use $HOME or ~
 export WALLPAPER_DIR="/home/$USER/.wallpapers"
 
 # Override .bash_it/themes/base.theme.bash

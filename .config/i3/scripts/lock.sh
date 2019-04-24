@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 icon="$HOME/.config/i3/icons/lock.png"
+# REVIEW42: May not work after reboot.
 tmpbg='/tmp/screen.png'
 
 (( $# )) && { icon=$1; }
