@@ -1,18 +1,18 @@
 [submodule ".config/qtile"]
 	path = .config/qtile
-	url = http://github.com/fishfurbanter/qtile-config
+	url = http://github.com/andecy64/qtile-config
 [submodule ".xmonad"]
 	path = .xmonad
-	url = http://github.com/fishfurbanter/xmonad-config
+	url = http://github.com/andecy64/xmonad-config
 [submodule ".pkglist"]
 	path = .pkglist
-	url = http://github.com/fishfurbanter/pkglist-config
+	url = http://github.com/andecy64/pkglist-config
 [submodule ".utils"]
 	path = .utils
-	url = http://github.com/fishfurbanter/utils-config
+	url = http://github.com/andecy64/utils-config
 [submodule ".config/polybar"]
 	path = .config/polybar
-	url = http://github.com/fishfurbanter/polybar-config
+	url = http://github.com/andecy64/polybar-config
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = http://github.com/Valloric/YouCompleteMe
