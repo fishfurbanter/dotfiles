@@ -4,7 +4,7 @@
 ########################
 
 # Path to the bash it configuration
-export BASH_IT="/home/andecy/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -13,9 +13,6 @@ export BASH_IT_THEME='bobby-python'
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
 # export BASH_IT_REMOTE='bash-it'
-
-# Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -75,7 +72,7 @@ source /bin/virtualenvwrapper.sh
 ####
 #Dotfiles git repo alias
 ####
-alias config='/usr/bin/git --git-dir=/home/andecy/.cfg/ --work-tree=/home/andecy'
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 GEM_HOME=$(ruby -e 'print Gem.user_dir')
 eval $(thefuck --alias)

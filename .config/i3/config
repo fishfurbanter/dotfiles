@@ -225,7 +225,7 @@ urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 }
 
 ### Start feh (wallpaper)
-exec_always --no-startup-id feh --bg-scale /home/andecy/.wallpapers/.wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/.wallpapers/.wallpaper.jpg
 
 ### ??
 exec --no-startup-id compton -f
