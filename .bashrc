@@ -10,10 +10,6 @@ export BASH_IT="$HOME/.bash_it"
 # location /.bash_it/themes/
 export BASH_IT_THEME='bobby-python'
 
-# (Advanced): Change this to the name of your remote repo if you
-# cloned bash-it with a remote other than origin such as `bash-it`.
-# export BASH_IT_REMOTE='bash-it'
-
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
@@ -31,17 +27,12 @@ export SCM_CHECK=true
 # Will otherwise fall back on $HOSTNAME.
 #export SHORT_HOSTNAME=$(hostname -s)
 
-# Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/djl/vcprompt
-#export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
-
 # (Advanced): Uncomment this to make Bash-it reload itself automatically
 # after enabling or disabling aliases, plugins, and completions.
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-
 
 ####
 # Set vim as the default shell editor
@@ -52,12 +43,13 @@ EDITOR="$VISUAL"
 ####
 # Add .utils/bin to path
 ####
-PATH=$PATH:$HOME/.utils/sh
+UTILS=$HOME/.utils
+PATH=$PATH:$UTILS/sh
 
 ####
 #History size
 ####
-HISTSIZE=10000
+HISTSIZE=100000
 HISTFILESIZE=100000
 
 ####
@@ -73,22 +65,18 @@ source /bin/virtualenvwrapper.sh
 #Dotfiles git repo alias
 ####
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-GEM_HOME=$(ruby -e 'print Gem.user_dir')
-eval $(thefuck --alias)
-
 
 ####
-# Racket SICP Alias
+# Python env vars
 ####
-alias sicp='racket -i neil/sicp -l xrepl'
+PYTHONDONTWRITEBYTECODE=1
 
 ####
 # Copied from .bash_profile
 ####
 alias devt="pushd $HOME/dev/tutorials"
 # Wallpaper directory
-export WALLPAPER_DIR="/home/$USER/.wallpapers"
+export WALLPAPER_DIR="$HOME/.wallpapers"
 
 # Override .bash_it/themes/base.theme.bash
 function py_interp_prompt {
@@ -100,3 +88,19 @@ function py_interp_prompt {
 function prompt_command() {
     PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
 }
+
+
+# Go path
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
+# Aliases
+alias vim='nvim'
+alias ll="ls -lah"
+alias sl="ls"
+alias c='clear'
+alias cdp="cd ~/Projects"
+alias cdw="cd ~/Workspace"
+
+# get platform specific config
+source $UTILS/sh/get_platform_soft.sh

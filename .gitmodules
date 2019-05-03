@@ -13,54 +13,6 @@
 [submodule ".config/polybar"]
 	path = .config/polybar
 	url = http://github.com/andecy64/polybar-config
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = http://github.com/Valloric/YouCompleteMe
-[submodule ".vim/bundle/Vundle.vim"]
-	path = .vim/bundle/Vundle.vim
-	url = http://github.com/VundleVim/Vundle.vim
-[submodule ".vim/bundle/vim-devicons"]
-	path = .vim/bundle/vim-devicons
-	url = http://github.com/ryanoasis/vim-devicons
-[submodule ".vim/bundle/python-mode"]
-	path = .vim/bundle/python-mode
-	url = http://github.com/klen/python-mode
-[submodule ".vim/bundle/vim-eunuch"]
-	path = .vim/bundle/vim-eunuch
-	url = http://github.com/tpope/vim-eunuch
-[submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
-	url = http://github.com/tpope/vim-markdown
-[submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
-	url = http://github.com/tpope/vim-surround
-[submodule ".vim/bundle/vim-indent-guides"]
-	path = .vim/bundle/vim-indent-guides
-	url = http://github.com/nathanaelkane/vim-indent-guides
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = http://github.com/bling/vim-airline
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = http://github.com/scrooloose/syntastic
-[submodule ".vim/bundle/vim-polyglot"]
-	path = .vim/bundle/vim-polyglot
-	url = http://github.com/sheerun/vim-polyglot
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
-	url = http://github.com/scrooloose/nerdtree
-[submodule ".vim/bundle/vim-nerdtree-syntax-highlight"]
-	path = .vim/bundle/vim-nerdtree-syntax-highlight
-	url = http://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-[submodule ".vim/bundle/vim-json"]
-	path = .vim/bundle/vim-json
-	url = http://github.com/elzr/vim-json
-[submodule ".vim/bundle/vim"]
-	path = .vim/bundle/vim
-	url = http://github.com/dracula/vim
-[submodule ".vim/bundle/rainbow_parentheses.vim"]
-	path = .vim/bundle/rainbow_parentheses.vim
-	url = http://github.com/kien/rainbow_parentheses.vim
 [submodule ".bash_it"]
 	path = .bash_it
 	url = http://github.com/Bash-it/bash-it
