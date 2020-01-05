@@ -1,5 +1,13 @@
 ## Andecy64's Dotfiles!
 
+
+### Required environment variables
+
+GIT_COMMITTER_EMAIL=
+GIT_COMMITTER_NAME=
+GITHUB_TOKEN=
+
+
 #### Planned changes:
 - [ ] All configurations should be in one branch.
 - [ ] All vim plugins/support will be removed.

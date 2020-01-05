@@ -1,0 +1,24 @@
+session_name: home
+windows:
+- window_name: bash
+  panes:
+    -
+- window_name: aws
+  panes:
+    - awskeys import default
+- window_name: blog
+  start_directory:  ${HOME}/Personal/Projects/coregen-blog
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    -
+    - ./view.sh
+- window_name: coregen
+  start_directory: ${HOME}/Personal/Projects/
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    -
+    -
