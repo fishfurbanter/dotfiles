@@ -1,0 +1,13 @@
+## Keyboard layouts
+setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
+
+####
+# Virtualenv
+####
+export WORKON_HOME=~/.virtualenvs
+#export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /bin/virtualenvwrapper.sh
+
+# ls colors
+export LSCOLORS_FLAG='--colors'

@@ -1,0 +1,37 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.vim: vim/vim
+    ~/.vimrc: vim/vimrc
+    ~/.Xresources: xorg/Xresources
+    ~/.compton.conf: xorg/compton.conf
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/settings.json: nvim/settings.json
+    ~/.tmux.conf: tmux/.tmux.conf
+    ~/.tmux/tmux.conf: tmux/tmux.conf
+    ~/.tmux/tmuxp-template.yml: tmux/tmux-template.yml
+    ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
+    ~/.bash_profile: shell/bash/bash_profile
+    ~/.bashrc: shell/bash/bashrc
+    ~/.aliases: shell/bash/aliases
+    ~/.functions: shell/bash/functions
+    ~/.inputrc: shell/inputrc
+    ~/.utils: utils
+    ~/.bashrc_archlinux: shell/bash/bashrc_archlinux
+    ~/.bashrc_osx: shell/bash/bashrc_osx
+    ~/.variables: shell/global_variables
+- create:
+    - ~/.config/
+    - ~/.config/neovim/
+    - ~/.tmux/
+    - ~/.vim/
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

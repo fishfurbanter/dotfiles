@@ -1,0 +1,12 @@
+alias vim='nvim'
+alias ls="ls $LSCOLORS_FLAG"
+alias sl="ls"
+alias ll="ls -lah"
+alias c='clear'
+alias cdp="cd ~/Projects"
+alias cdw="cd ~/Workspace"
+alias cds='cd $HOME/Source'
+alias cdp='cd $HOME/Projects'
+alias cdpp='cd $HOME/Personal/Projects'
+alias kssh='kitty +kitten ssh'
+alias devt="pushd $HOME/dev/tutorials"

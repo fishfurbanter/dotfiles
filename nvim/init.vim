@@ -14,6 +14,8 @@ set clipboard=unnamed
 set guifont=DroidMono\ Nerd\ Font\ Mono:h14
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "set termguicolors
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
@@ -24,6 +26,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'bling/vim-airline'
 Plug 'w0rp/ale'
+Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'powerline/powerline'
@@ -34,7 +37,8 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
 " =========================================================
@@ -158,4 +162,4 @@ nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
-let b:ale_linters = ['flake8', 'pylint']
+let b:ale_linters = ['pylint', 'hlint', 'ghc-mod']

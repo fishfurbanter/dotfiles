@@ -3,6 +3,9 @@
 # Bash-it configuration
 ########################
 
+source $HOME/.functions
+source $HOME/.variables
+
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
 
@@ -41,42 +44,45 @@ VISUAL=vim
 EDITOR="$VISUAL"
 
 ####
-# Add .utils/bin to path
-####
-UTILS=$HOME/.utils
-PATH=$PATH:$UTILS/sh
-
-####
 #History size
 ####
 HISTSIZE=100000
 HISTFILESIZE=100000
 
 ####
-# Virtualenv
+# Path
 ####
-export WORKON_HOME=~/.envs
-export PROJECT_HOME=~/actual
-#export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source /bin/virtualenvwrapper.sh
+
+export PATH=$PATH:$UTILS/sh:$UTILS/py:$GOPATH/bin:$HOME/.local/bin
 
 ####
-#Dotfiles git repo alias
+# Platform specific configuration
 ####
-alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+if [[ "$PLATFORM" == "Darwin" ]]
+then
+        source $HOME/.bashrc_osx
+else
+        source $HOME/.bashrc_archlinux
+fi
 
-####
-# Python env vars
-####
-PYTHONDONTWRITEBYTECODE=1
+# ####
+# # Virtualenv
+# ####
+# export WORKON_HOME=~/.virtualenvs
+# #export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# source /bin/virtualenvwrapper.sh
+
+# ####
+# #Dotfiles git repo alias
+# ####
+# alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+
 
 ####
 # Copied from .bash_profile
 ####
-alias devt="pushd $HOME/dev/tutorials"
 # Wallpaper directory
-export WALLPAPER_DIR="$HOME/.wallpapers"
 
 # Override .bash_it/themes/base.theme.bash
 function py_interp_prompt {
@@ -89,18 +95,9 @@ function prompt_command() {
     PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
 }
 
-
-# Go path
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Aliases
-alias vim='nvim'
-alias ll="ls -lah"
-alias sl="ls"
-alias c='clear'
-alias cdp="cd ~/Projects"
-alias cdw="cd ~/Workspace"
+source $HOME/.aliases
 
-# get platform specific config
-source $UTILS/sh/get_platform_soft.sh
+workon devmachine

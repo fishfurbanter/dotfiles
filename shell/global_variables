@@ -1,0 +1,12 @@
+export IRC_CLIENT="weechat"
+export IRC_NICKNAME=""
+export GOPATH=$HOME/.go
+export WALLPAPER_DIR="$HOME/.wallpapers"
+export UTILS=$HOME/.utils
+export PLATFORM="$(get_platform)"
+
+####
+# Python env vars
+####
+export PYTHONDONTWRITEBYTECODE=1
+

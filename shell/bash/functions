@@ -1,0 +1,3 @@
+get_platform () {
+    echo "$(uname -a | cut -d ' ' -f 1)";
+}

@@ -1,18 +1,15 @@
-[submodule ".config/qtile"]
+[submodule "qtile"]
 	path = qtile
-	url = http://github.com/andecy64/qtile-config
-[submodule ".xmonad"]
+	url = git@github.com:andecy64/qtile-config.git
+[submodule "xmonad"]
 	path = xmonad
-	url = http://github.com/andecy64/xmonad-config
-[submodule ".pkglist"]
+	url = git@github.com:andecy64/xmonad-config.git
+[submodule "packages"]
 	path = packages
-	url = http://github.com/andecy64/pkglist-config
-[submodule ".utils"]
+	url = git@github.com:andecy64/packages-config.git
+[submodule "utils"]
 	path = utils
-	url = http://github.com/andecy64/utils-config
-[submodule ".config/polybar"]
+	url = git@github.com:andecy64/utils-config.git
+[submodule "polybar"]
 	path = polybar
-	url = http://github.com/andecy64/polybar-config
-[submodule ".bash_it"]
-	path = .bash_it
-	url = http://github.com/Bash-it/bash-it
+	url = git@github.com:andecy64/polybar-config.git
