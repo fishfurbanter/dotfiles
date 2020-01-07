@@ -3,9 +3,9 @@
 
 ### Required environment variables
 
-GIT_COMMITTER_EMAIL=
-GIT_COMMITTER_NAME=
-GITHUB_TOKEN=
+GIT_COMMITTER_EMAIL= <br/>
+GIT_COMMITTER_NAME= <br/>
+GITHUB_TOKEN= <br/>
 
 
 #### Planned changes:
@@ -15,7 +15,7 @@ GITHUB_TOKEN=
 
 #### Discarded plans:
 
-~~Test different branches for portability~~
-~~Seperate i3, urxvt-unicode to submodules for portability.~~
-~~set up i3blocks scripts.~~
-~~Configure tmux and build a script for autostarting vim as ide.~~
+~~Test different branches for portability~~ <br/>
+~~Seperate i3, urxvt-unicode to submodules for portability.~~ <br/>
+~~set up i3blocks scripts.~~ <br/>
+~~Configure tmux and build a script for autostarting vim as ide.~~ <br/>
