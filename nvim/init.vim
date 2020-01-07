@@ -1,19 +1,26 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 " Show line numbers
 set number
+
 " Syntax and colorscheme
 syntax on
+
 " Tab behavior
 set expandtab
 set tabstop=4
 set scrolloff=25
+
 " set t_Co=256
+"
 set backspace=indent,eol,start
 set clipboard=unnamed
 set guifont=DroidMono\ Nerd\ Font\ Mono:h14
+"
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "set termguicolors
+"
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:python_host_prog = '/usr/local/bin/python2'
@@ -129,17 +136,6 @@ let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the c
 " Scheme indent
 "
 autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
-
-"""""
-" Tslime
-"
-" let g:tslime_ensure_trailing_newlines = 1
-" let g:tslime_always_current_session = 1 
-" let g:tslime_always_current_window = 1
-" let g:tslime_ensure_trailing_newlines = 1
-" let g:tslime_normal_mapping = '<localleader>t'
-" let g:tslime_visual_mapping = '<localleader>t'
-" let g:tslime_vars_mapping = '<localleader>T'
 
 let g:deoplete#enable_at_startup = 1
 

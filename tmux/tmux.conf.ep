@@ -1,0 +1,4 @@
+########
+# Tmux settings
+
+source-file "$HOME/.tmux/tmux.conf

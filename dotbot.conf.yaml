@@ -6,7 +6,6 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.tmux.conf: tmux/tmux.conf
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
     ~/.Xresources: xorg/Xresources
@@ -14,8 +13,7 @@
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.config/nvim/settings.json: nvim/settings.json
-    ~/.tmux.conf: tmux/.tmux.conf
-    ~/.tmux/tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/tmuxp.yml.projects: tmux/tmuxp.yml.projects
     ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
     ~/.bash_profile: shell/bash/bash_profile
