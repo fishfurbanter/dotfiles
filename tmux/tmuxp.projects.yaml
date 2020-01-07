@@ -1,4 +1,4 @@
-session_name: home
+session_name: projects
 windows:
 - window_name: bash
   panes:
