@@ -16,7 +16,7 @@
     ~/.config/nvim/settings.json: nvim/settings.json
     ~/.tmux.conf: tmux/.tmux.conf
     ~/.tmux/tmux.conf: tmux/tmux.conf
-    ~/.tmux/tmuxp-template.yml: tmux/tmux-template.yml
+    ~/.tmux/tmuxp.yml.projects: tmux/tmuxp.yml.projects
     ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
     ~/.bash_profile: shell/bash/bash_profile
     ~/.bashrc: shell/bash/bashrc

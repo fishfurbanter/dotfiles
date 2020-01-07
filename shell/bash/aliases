@@ -10,3 +10,7 @@ alias cdp='cd $HOME/Projects'
 alias cdpp='cd $HOME/Personal/Projects'
 alias kssh='kitty +kitten ssh'
 alias devt="pushd $HOME/dev/tutorials"
+alias tmuxp-load="tmuxp load $HOME/.tmux/tmuxp.{yaml,yml,json}.projects"
+alias source-aliases=". $HOME/.aliases"
+alias source-functions=". $HOME/.functions"
+alias source-variables=". $HOME/.variables"
