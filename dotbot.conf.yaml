@@ -26,6 +26,7 @@
     ~/.bashrc_archlinux: shell/bash/bashrc_archlinux
     ~/.bashrc_osx: shell/bash/bashrc_osx
     ~/.variables: shell/global_variables
+    ~/.packages: packages
 - create:
     - ~/.config/
     - ~/.config/neovim/

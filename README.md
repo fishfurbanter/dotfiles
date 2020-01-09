@@ -7,6 +7,11 @@ GIT_COMMITTER_EMAIL= <br/>
 GIT_COMMITTER_NAME= <br/>
 GITHUB_TOKEN= <br/>
 
+### Required packages / files
+
+virtualenvwrapper
+virtualenv
+
 
 #### Planned changes:
 - [ ] All configurations should be in one branch.

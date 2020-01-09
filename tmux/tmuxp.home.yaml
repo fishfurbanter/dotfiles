@@ -2,4 +2,11 @@ session_name: home
 windows:
 - window_name: reddit
   panes:
-    - rtv
+    - shell_command:
+      - "workon main"
+      - "rtv"
+
+- window_name: irc
+  panes:
+    - shell_command:
+      - "weechat"

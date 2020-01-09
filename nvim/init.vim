@@ -36,7 +36,6 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'powerline/powerline'
 Plug 'Yggdroot/indentLine'
 
 " LanguageCliemt-neovim

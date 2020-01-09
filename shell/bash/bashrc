@@ -100,4 +100,9 @@ function prompt_command() {
 # Aliases
 source $HOME/.aliases
 
-workon devmachine
+# Git branch completion
+# if [ -f ~/.git-completion.bash ]; then
+#   . ~/.git-completion.bash
+# fi
+
+workon default

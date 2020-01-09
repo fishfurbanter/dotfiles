@@ -14,3 +14,5 @@ alias tmuxp-load="tmuxp load $HOME/.tmux/tmuxp.projects.yaml $HOME/.tmux/tmuxp.h
 alias source-aliases=". $HOME/.aliases"
 alias source-functions="source $HOME/.functions"
 alias source-variables="source $HOME/.variables"
+alias edit-packages="vim $HOME/.packages"
+alias edit-dotfiles="vim $HOME/.dotfiles"
