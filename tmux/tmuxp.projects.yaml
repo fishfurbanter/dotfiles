@@ -7,7 +7,7 @@ windows:
   panes:
     - awskeys export default
 - window_name: blog
-  start_directory:  ${HOME}/Personal/Projects/coregen-blog
+  start_directory:  ${PROJECT_ROOT}/Projects/coregen-blog
   layout: main-vertical
   options:
     main-pane-width: 150
@@ -17,43 +17,13 @@ windows:
       - vim .
     - ./view.sh
 - window_name: coregen
-  start_directory: ${HOME}/Personal/Projects/coregen
+  start_directory: ${PROJECT_ROOT}/Projects/coregen
   layout: main-vertical
   options:
     main-pane-width: 150
   panes:
     - shell_command:
       - workon coregen
-      - vim .
-    -
-- window_name: openbalkans
-  start_directory: ${HOME}/Personal/Projects/openbalkans
-  layout: main-vertical
-  options:
-    main-pane-width: 150
-  panes:
-    - shell_command:
-      - workon openbalkans
-      - vim .
-    -
-- window_name: corax
-  start_directory: ${HOME}/Personal/Projects/corax
-  layout: main-vertical
-  options:
-    main-pane-width: 150
-  panes:
-    - shell_command:
-      - workon corax
-      - vim .
-    -
-- window_name: tengu
-  start_directory: ${HOME}/Personal/Projects/tengu
-  layout: main-vertical
-  options:
-    main-pane-width: 150
-  panes:
-    - shell_command:
-      - workon tengu
       - vim .
     -
 - window_name: kubernetes

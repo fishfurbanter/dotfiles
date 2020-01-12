@@ -16,3 +16,5 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 
 # ls colors
 export LSCOLORS_FLAG='-G'
+
+export PROJECT_ROOT=$HOME/Personal
