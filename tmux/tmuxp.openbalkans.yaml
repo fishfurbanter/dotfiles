@@ -1,4 +1,4 @@
-session_name: projects
+session_name: openbalkans
 windows:
 - window_name: bash
   panes:
@@ -10,7 +10,7 @@ windows:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon openbalkans
+      - workon openbalkans-env
       - vim .
     -
 - window_name: corax
@@ -20,7 +20,7 @@ windows:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon corax
+      - workon corax-env
       - vim .
     -
 - window_name: tengu
@@ -30,6 +30,6 @@ windows:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon tengu
+      - workon tengu-env
       - vim .
     -

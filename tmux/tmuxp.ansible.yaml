@@ -3,28 +3,8 @@ windows:
 - window_name: bash
   panes:
     -
-- window_name: devmachine
-  start_directory: ${PROJECT_ROOT}/Projects/ansible-role-devmachine
-  layout: main-vertical
-  options:
-    main-pane-width: 150
-  panes:
-    - shell_command:
-      - workon ansible-dev
-      - vim .
-    -
-- window_name: devconsole
-  start_directory: ${PROJECT_ROOT}/Projects/devconsole
-  layout: main-vertical
-  options:
-    main-pane-width: 150
-  panes:
-    - shell_command:
-      - workon ansible-dev
-      - vim .
-    -
-- window_name: dotbot
-  start_directory: ${PROJECT_ROOT}/Projects/ansible-role-dotbot
+- window_name: workstation
+  start_directory: ${PROJECT_ROOT}/Projects/workstation
   layout: main-vertical
   options:
     main-pane-width: 150

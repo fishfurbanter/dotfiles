@@ -3,10 +3,16 @@ windows:
 - window_name: reddit
   panes:
     - shell_command:
-      - "workon main"
+      - "workon main-env"
       - "rtv"
 
 - window_name: irc
   panes:
     - shell_command:
       - "weechat"
+
+- window_name: irc
+  panes:
+    - shell_command:
+      - workon xonsh
+      - "xonsh"

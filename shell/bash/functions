@@ -1,3 +1,9 @@
 get_platform () {
     echo "$(uname -a | cut -d ' ' -f 1)";
+}    
+
+task-sync () {
+    git -C $TASKWARRIOR_DATA_DIR pull origin master
+    git -C $TASKWARRIOR_DATA_DIR commit -am "DB Update"
+    git -C $TASKWARRIOR_DATA_DIR push origin master
 }

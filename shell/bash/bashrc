@@ -105,4 +105,9 @@ source $HOME/.aliases
 #   . ~/.git-completion.bash
 # fi
 
+####
+# Taskwarrior
+####
+export TASKWARRIOR_DATA_DIR=$HOME/.task
+
 workon default

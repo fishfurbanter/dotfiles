@@ -23,8 +23,8 @@ set guifont=DroidMono\ Nerd\ Font\ Mono:h14
 "
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+" let g:python_host_prog = '/usr/local/bin/python2'
+" let g:python3_host_prog = '/usr/local/bin/python3'
 
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/deoplete.nvim'

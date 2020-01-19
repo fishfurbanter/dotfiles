@@ -13,7 +13,7 @@ windows:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon coregen-blog
+      - workon coregen-blog-env
       - vim .
     - ./view.sh
 - window_name: coregen
@@ -23,7 +23,7 @@ windows:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon coregen
+      - workon coregen-env
       - vim .
     -
 - window_name: kubernetes
