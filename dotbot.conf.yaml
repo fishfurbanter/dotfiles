@@ -38,9 +38,11 @@
     ~/.packages: packages
     # Taskwarrior
     ~/.taskrc: taskwarrior/taskrc
+    ~/.taskwarrior.theme: taskwarrior/taskwarrior.theme
     # Qutebrowser
     ~/.config/qutebrowser/config.py: qutebrowser/config.py
     ~/.config/qutebrowser/draw.py: qutebrowser/draw.py
+    ~/.config/wtf/config.yml: wtfutil/config.yml
 - create:
     - ~/.config/
     - ~/.config/neovim/
