@@ -36,6 +36,11 @@
     ~/.variables: shell/global_variables
     # Packages
     ~/.packages: packages
+    # Taskwarrior
+    ~/.taskrc: taskwarrior/taskrc
+    # Qutebrowser
+    ~/.config/qutebrowser/config.py: qutebrowser/config.py
+    ~/.config/qutebrowser/draw.py: qutebrowser/draw.py
 - create:
     - ~/.config/
     - ~/.config/neovim/
