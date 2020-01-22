@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
+    # ~/.dotfiles: '' # Removed, .dotfiles will not be a link anymore
     # Vim
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
