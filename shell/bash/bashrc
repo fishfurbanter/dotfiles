@@ -110,4 +110,11 @@ source $HOME/.aliases
 ####
 export TASKWARRIOR_DATA_DIR=$HOME/.task
 
+# Latex
+export MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man
+export INFOPATH=/usr/local/texlive/2019/texmf-dist/doc/info
+export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
+
+source-completion
+
 workon default

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dotbot -c ${DOTFILES_DIR}/dotbot.conf.yaml -d ${DOTFILES_DIR}

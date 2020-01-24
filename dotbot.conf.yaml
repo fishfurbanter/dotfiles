@@ -43,11 +43,17 @@
     ~/.config/qutebrowser/config.py: qutebrowser/config.py
     ~/.config/qutebrowser/draw.py: qutebrowser/draw.py
     ~/.config/wtf/config.yml: wtfutil/config.yml
+    # Xorg
+    ~/.xinitrc: xorg/xinitrc
+    # Completion
+    ~/.bash_completion.d/pass.bash-completion: completion/pass.bash-completion
 - create:
     - ~/.config/
     - ~/.config/neovim/
     - ~/.tmux/
     - ~/.vim/
+    - ~/.config/wtf
+    - ~/.bash_completion.d
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

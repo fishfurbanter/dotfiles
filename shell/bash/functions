@@ -7,3 +7,9 @@ task-sync () {
     git -C $TASKWARRIOR_DATA_DIR commit -am "DB Update"
     git -C $TASKWARRIOR_DATA_DIR push origin master
 }
+
+source-completion () {
+    for completion in ~/.bash_completion.d/* ; do
+        . $completion
+    done
+}
