@@ -54,6 +54,7 @@
     - ~/.vim/
     - ~/.config/wtf
     - ~/.bash_completion.d
+    - ~/.config/qutebrowser
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
