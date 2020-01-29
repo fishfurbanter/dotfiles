@@ -1,5 +1,5 @@
 ## Keyboard layouts
-setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
+# setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle # This should only appear in .xinitrc
 
 ####
 # Virtualenv
