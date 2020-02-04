@@ -45,6 +45,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neovimhaskell/haskell-vim'
+Plug 'rhysd/vim-grammarous'
 
 call plug#end()
 " =========================================================
