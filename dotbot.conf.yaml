@@ -47,6 +47,8 @@
     ~/.xinitrc: xorg/xinitrc
     # Completion
     ~/.bash_completion.d/pass.bash-completion: completion/pass.bash-completion
+    # Git
+    ~/.gitconfig: git/gitconfig
 - create:
     - ~/.config/
     - ~/.config/neovim/
