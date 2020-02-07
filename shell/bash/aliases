@@ -19,3 +19,6 @@ alias edit-dotfiles="vim $HOME/.dotfiles"
 alias t="task"
 alias dotlink="dotbot -d $DOTFILES_DIR -c dotbot.conf.yml"
 alias vim-dotfiles="nvim $DOTFILES_DIR"
+alias edit-aliases="vim $HOME/.aliases"
+alias get-image-size='identify -format "%wx%h"'
+alias get-image-aspect-ratio='identify -format "%[fx:w/h]"'
