@@ -23,6 +23,7 @@
     ~/.tmux/tmuxp.home.yaml: tmux/tmuxp.home.yaml
     ~/.tmux/tmuxp.ansible.yaml: tmux/tmuxp.ansible.yaml
     ~/.tmux/tmuxp.openbalkans.yaml: tmux/tmuxp.openbalkans.yaml
+    ~/.tmux/tmuxp.compsci.yaml: tmux/tmuxp.compsci.yaml
     ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
     # Shell
     ~/.bash_profile: shell/bash/bash_profile

@@ -1,0 +1,26 @@
+session_name: the-virtual-way
+windows:
+- window_name: notes
+  panes:
+    -
+- window_name: cloud
+  panes:
+    - 
+- window_name: compsci
+  start_directory:  ${PROJECT_ROOT}/Projects/
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    - shell_command:
+      - workon compsci
+      - vim .
+- window_name: systems
+  start_directory: ${PROJECT_ROOT}/Projects/
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    - shell_command:
+      - vim .
+    -

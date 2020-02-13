@@ -3,7 +3,7 @@ windows:
 - window_name: reddit
   panes:
     - shell_command:
-      - "workon main-env"
+      - "workon reddit"
       - "rtv"
 
 - window_name: irc
@@ -11,8 +11,14 @@ windows:
     - shell_command:
       - "weechat"
 
-- window_name: irc
+- window_name: xonsh
   panes:
     - shell_command:
       - workon xonsh
       - "xonsh"
+
+- window_name: dotfiles
+  panes:
+    - shell_command:
+      - cd $HOME/.dotfiles
+      - vim .
