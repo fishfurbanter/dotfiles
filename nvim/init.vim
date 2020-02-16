@@ -37,6 +37,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
+Plug 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
 
 " LanguageCliemt-neovim
 Plug 'autozimu/LanguageClient-neovim', {
@@ -159,3 +161,8 @@ nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 let b:ale_linters = ['pylint', 'hlint', 'ghc-mod']
+
+""""""
+" Markdown
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled = 1
