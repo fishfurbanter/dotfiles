@@ -13,3 +13,14 @@ source-completion () {
         . $completion
     done
 }
+
+sync-overlay-with-msg () {
+    local args="$@"
+    if [[ -z ${args} ]]
+    then
+            echo "Please give git a commit message" 
+    else
+            pushd ${HOME}/.overlay && git add . && git commit -m "${args}" && git push origin master && popd
+            sudo layman -S
+    fi
+}

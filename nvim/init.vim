@@ -16,7 +16,7 @@ set scrolloff=25
 "
 set backspace=indent,eol,start
 set clipboard=unnamed
-set guifont=DroidMono\ Nerd\ Font\ Mono:h14
+set guifont=DroidMono\ Nerd\ Font\ Mono:h12
 "
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "set termguicolors
@@ -37,6 +37,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
+Plug 'hashivim/vim-terraform'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Plug 'kien/ctrlp.vim'
+Plug 'ap/buftbline'
 
 " LanguageCliemt-neovim
 Plug 'autozimu/LanguageClient-neovim', {
@@ -46,6 +52,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neovimhaskell/haskell-vim'
 Plug 'rhysd/vim-grammarous'
+Plug 'tpope/vim-surround'
+Plug 'chrisbra/csv.vim'
 
 call plug#end()
 " =========================================================
@@ -56,6 +64,16 @@ call plug#end()
 let g:dracula_italic = 0
 colorscheme dracula
 highlight Normal ctermbg=None
+
+""" fzf config
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+if has('nvim') && !exists('g:fzf_layout')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+endif
+"""
+
 
 "-----------------
 " Bind JSON to different colorscheme

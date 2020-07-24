@@ -50,6 +50,7 @@
     ~/.bash_completion.d/pass.bash-completion: completion/pass.bash-completion
     # Git
     ~/.gitconfig: git/gitconfig
+    ~/.config/sxhkd/sxhkdrc: xorg/sxhkdrc
 
 - create:
     - ~/.config/

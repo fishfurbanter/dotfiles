@@ -27,7 +27,7 @@ windows:
       - vim .
     -
 - window_name: kubernetes
-  start_directory: ${HOME}
+  start_directory: ${PROJECT_ROOT}
   panes:
     - shell_command:
       -
