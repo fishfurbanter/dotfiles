@@ -1,3 +1,9 @@
 #!/bin/bash
 
-dotbot -c ${DOTFILES_DIR}/dotbot.conf.yaml -d ${DOTFILES_DIR}
+run-with-args() {
+        local config_file=$1
+
+        dotbot -c ${DOTFILES_DIR}/dotbot.${config_file}.yaml -d ${DOTFILES_DIR}
+}
+
+if [ -z $1 ]; then echo "pass conf or secondary as first parameter"; else run-with-args $1; fi

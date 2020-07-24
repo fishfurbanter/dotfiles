@@ -1,5 +1,5 @@
 alias vim='nvim'
-alias ls="ls $LSCOLORS_FLAG"
+# alias ls="ls $LSCOLORS_FLAG"
 alias sl="ls"
 alias ll="ls -lah"
 alias c='clear'
@@ -28,3 +28,7 @@ alias edit-gitconfig='vim ${HOME}/.gitconfig'
 alias edit-functions='vim ${HOME}/.functions'
 alias edit-kitty='vim ${HOME}/.config/kitty/kitty.conf'
 alias edit-overlay='vim ${HOME}/.overlay'
+alias edit-variables='vim $HOME/.variables'
+alias vim-plugin-update='vim +PlugInstall +qall'
+alias es='exa -abghHlis'
+alias whatsmyip='dig +short myip.opendns.com @resolver1.opendns.com -4'
