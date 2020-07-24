@@ -1,0 +1,43 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # ~/.dotfiles: '' # Removed, .dotfiles will not be a link anymore
+    # Vim
+    ~/.vim: vim/vim
+    ~/.vimrc: vim/vimrc
+    # Neovim
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/settings.json: nvim/settings.json
+    # Tmux/Tmuxp
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
+    # Shell
+    ~/.bash_profile: shell/bash/bash_profile
+    ~/.bashrc: shell/bash/bashrc
+    ~/.aliases: shell/bash/aliases
+    ~/.functions: shell/bash/functions
+    # ~/.inputrc: shell/inputrc  # Risky in sensitive operations
+    ~/.utils: utils
+    ~/.bashrc_archlinux: shell/bash/bashrc_archlinux
+    ~/.bashrc_osx: shell/bash/bashrc_osx
+    ~/.variables: shell/global_variables
+    # Xorg
+    ~/.xinitrc: xorg/xinitrc
+    # Completion
+    ~/.bash_completion.d/pass.bash-completion: completion/pass.bash-completion
+    ~/.bashrc_debian: shell/bash/bashrc_debian
+
+- create:
+    - ~/.config/
+    - ~/.config/nvim/
+    - ~/.tmux/
+    - ~/.vim/
+    - ~/.bash_completion.d
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+

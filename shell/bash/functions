@@ -2,10 +2,11 @@ get_platform () {
     echo "$(uname -a | cut -d ' ' -f 1)";
 }    
 
-task-sync () {
-    git -C $TASKWARRIOR_DATA_DIR pull origin master
-    git -C $TASKWARRIOR_DATA_DIR commit -am "DB Update"
-    git -C $TASKWARRIOR_DATA_DIR push origin master
+repo-sync () {
+    local repopath=$1
+    git -C $repopath pull origin master
+    git -C $repopath commit -am "Sync"
+    git -C $repopath push origin master
 }
 
 source-completion () {

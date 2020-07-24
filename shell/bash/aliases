@@ -1,5 +1,5 @@
 alias vim='nvim'
-alias ls="ls $LSCOLORS_FLAG"
+# alias ls="ls $LSCOLORS_FLAG"
 alias sl="ls"
 alias ll="ls -lah"
 alias c='clear'
@@ -22,3 +22,9 @@ alias vim-dotfiles="nvim $DOTFILES_DIR"
 alias edit-aliases="vim $HOME/.aliases"
 alias get-image-size='identify -format "%wx%h"'
 alias get-image-aspect-ratio='identify -format "%[fx:w/h]"'
+alias edit-neovim='vim ~/.config/nvim/init.vim'
+alias edit-functions='vim $HOME/.functions'
+alias edit-variables='vim $HOME/.variables'
+alias vim-plugin-update='vim +PlugInstall +qall'
+alias es='exa -abghHlis'
+alias whatsmyip='dig +short myip.opendns.com @resolver1.opendns.com -4'

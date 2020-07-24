@@ -13,8 +13,9 @@ export PYTHONDONTWRITEBYTECODE=1
 ####
 # Powerline
 ####
-export POWERLINE_REPO=$(pip3 show powerline-status | grep 'Location:' |awk '{print $2}')
-export POWERLINE_TMUX_CONF=${POWERLINE_REPO}/powerline/bindings/tmux/powerline.conf
+## Not using powerline atm
+# export POWERLINE_REPO=$(pip3 show powerline-status | grep 'Location:' |awk '{print $2}')
+# export POWERLINE_TMUX_CONF=${POWERLINE_REPO}/powerline/bindings/tmux/powerline.conf
 
 ####
 # Dotfiles

@@ -16,21 +16,22 @@ set scrolloff=25
 "
 set backspace=indent,eol,start
 set clipboard=unnamed
-set guifont=DroidMono\ Nerd\ Font\ Mono:h14
+set guifont=DroidMono\ Nerd\ Font\ Mono:h16
 "
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "set termguicolors
 "
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-" let g:python_host_prog = '/usr/local/bin/python2'
-" let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python_host_prog = substitute(system("which python2"), '\n', '', 'g')
+let g:python3_host_prog = substitute(system("which python3"), '\n', '', 'g')
 
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'joshdick/onedark.vim'
 Plug 'bling/vim-airline'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
@@ -39,6 +40,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
+
 
 " LanguageCliemt-neovim
 Plug 'autozimu/LanguageClient-neovim', {
@@ -48,6 +52,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neovimhaskell/haskell-vim'
 Plug 'rhysd/vim-grammarous'
+Plug 'Chiel92/vim-autoformat'
 
 call plug#end()
 " =========================================================
@@ -166,3 +171,7 @@ let b:ale_linters = ['pylint', 'hlint', 'ghc-mod']
 " Markdown
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
+"let g:lightline = {
+"  \ 'colorscheme': 'onedark',
+"  \ }
+au BufNewFile,BufRead Jenkinsfile setf groovy
