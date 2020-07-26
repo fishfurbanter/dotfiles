@@ -24,3 +24,4 @@ virtualenv
 ~~Seperate i3, urxvt-unicode to submodules for portability.~~ <br/>
 ~~set up i3blocks scripts.~~ <br/>
 ~~Configure tmux and build a script for autostarting vim as ide.~~ <br/>
+
