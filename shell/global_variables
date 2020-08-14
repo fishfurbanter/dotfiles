@@ -1,8 +1,8 @@
 export IRC_CLIENT="weechat"
 export IRC_NICKNAME=""
-export GOPATH=$HOME/.go
-export WALLPAPER_DIR="$HOME/.wallpapers"
-export UTILS=$HOME/.utils
+export GOPATH=${HOME}/.go
+export WALLPAPER_DIR="${HOME}/.wallpapers"
+export UTILS=${HOME}/.utils
 export PLATFORM="$(get_platform)"
 
 ####
@@ -21,4 +21,9 @@ export PYTHONDONTWRITEBYTECODE=1
 # Dotfiles
 ####
 
-export DOTFILES_DIR="$HOME/.dotfiles"
+export DOTFILES_DIR="${HOME}/.dotfiles"
+
+####
+# Go
+####
+export GOPATH=${HOME}/.go

@@ -31,9 +31,6 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
 if [ -x /etc/debian_version ]; then
         source $HOME/.bashrc_debian
 fi
@@ -99,8 +96,8 @@ source $HOME/.cargo/env
 export PATH=$PATH:$HOME/.local/bin
 
 
-source $HOME/.functions
 source $HOME/.variables
+source $HOME/.functions
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
@@ -164,7 +161,7 @@ export PATH=$PATH:$UTILS/sh:$UTILS/py:$GOPATH/bin:$HOME/.local/bin
 # # Virtualenv
 # ####
 export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_SCRIPT=/bin/vitualenvwrapper.sh
+export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/vitualenvwrapper.sh
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # source /bin/virtualenvwrapper.sh
 
@@ -213,4 +210,7 @@ export TASKWARRIOR_DATA_DIR=$HOME/.task
 
 export NODE_PATH=$HOME/.npm
 export $(dbus-launch)
+
+export STARSHIP_CONFIG=${HOME}/.config/starship.toml
+eval "$(starship init bash)"
 source-completion

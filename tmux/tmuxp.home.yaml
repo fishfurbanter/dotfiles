@@ -1,11 +1,5 @@
 session_name: home
 windows:
-- window_name: reddit
-  panes:
-    - shell_command:
-      - "workon reddit"
-      - "rtv"
-
 - window_name: irc
   panes:
     - shell_command:

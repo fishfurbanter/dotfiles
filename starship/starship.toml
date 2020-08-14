@@ -1,0 +1,18 @@
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+[username]
+disabled = false
+
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜"     # The "symbol" segment is being set to "➜"
+err_symbol = "✗"
+use_symbol_for_status = true
+
+[python]
+symbol = "Py-"
+style = "bold blue"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
