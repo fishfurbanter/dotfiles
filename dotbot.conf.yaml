@@ -51,6 +51,8 @@
     # Git
     ~/.gitconfig: git/gitconfig
     ~/.config/sxhkd/sxhkdrc: xorg/sxhkdrc
+    # Starship
+    ~/.config/starship.toml: starship/starship.toml
 
 - create:
     - ~/.config/

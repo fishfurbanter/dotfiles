@@ -25,3 +25,7 @@ sync-overlay-with-msg () {
             sudo layman -S
     fi
 }
+
+get-iso-week() {
+    echo $(echo 'import datetime; print(datetime.datetime.now().isocalendar()[1], end="")' | python)
+}
