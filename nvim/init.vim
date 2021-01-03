@@ -17,6 +17,12 @@ set scrolloff=25
 set backspace=indent,eol,start
 set clipboard=unnamed
 set guifont=DroidMono\ Nerd\ Font\ Mono:h16
+
+set hidden
+nnoremap <C-L> :bnext<CR>
+nnoremap <C-H> :bprev<CR>
+nnoremap <C-;> :bd<CR>
+
 "
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 "set termguicolors
@@ -29,6 +35,7 @@ let g:python3_host_prog = substitute(system("which python3"), '\n', '', 'g')
 call plug#begin('~/.vim/plugged')
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'davidhalter/jedi'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'joshdick/onedark.vim'
@@ -38,16 +45,21 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Yggdroot/indentLine'
-Plug 'hashivim/vim-terraform'
+" Plug 'kien/ctrlp.vim'
+" Plug 'ap/vim-buftabline'
+Plug 'plasticboy/vim-markdown'
+Plug 'godlygeek/tabular'
+Plug 'rbgrouleff/bclose.vim'
+
+" FZF and display mode
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-" Plug 'kien/ctrlp.vim'
-Plug 'ap/buftbline'
-Plug 'plasticboy/vim-markdown'
-Plug 'godlygeek/tabular'
+
 Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim'
+
+" Terraform
+Plug 'hashivim/vim-terraform'
 
 " LanguageCliemt-neovim
 Plug 'autozimu/LanguageClient-neovim', {
@@ -192,3 +204,8 @@ let g:vim_markdown_folding_disabled = 1
 "  \ 'colorscheme': 'onedark',
 "  \ }
 au BufNewFile,BufRead Jenkinsfile setf groovy
+
+""""""
+" Terraform
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1

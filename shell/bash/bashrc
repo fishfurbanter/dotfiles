@@ -96,8 +96,8 @@ source $HOME/.cargo/env
 export PATH=$PATH:$HOME/.local/bin
 
 
-source $HOME/.variables
 source $HOME/.functions
+source $HOME/.variables
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
@@ -209,8 +209,27 @@ export TASKWARRIOR_DATA_DIR=$HOME/.task
 # export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
 
 export NODE_PATH=$HOME/.npm
+
 export $(dbus-launch)
 
+# Starship
 export STARSHIP_CONFIG=${HOME}/.config/starship.toml
 eval "$(starship init bash)"
+
 source-completion
+
+# Zoxide
+eval "$(zoxide init bash)"
+
+# AWS Vault
+export AWS_VAULT_PROMPT=terminal
+export AWS_VAULT_BACKEND=pass
+
+# Kubectl
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

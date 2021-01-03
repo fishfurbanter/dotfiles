@@ -4,3 +4,5 @@
 source $HOME/.bashrc
 
 export PATH="$HOME/.cargo/bin:$PATH"
+complete -C aws_completer aws-vault
+

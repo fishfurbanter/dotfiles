@@ -27,3 +27,8 @@ export DOTFILES_DIR="${HOME}/.dotfiles"
 # Go
 ####
 export GOPATH=${HOME}/.go
+
+####
+# VPN
+####
+export OPENVPN_PROFILE_DIR=~/.openvpn

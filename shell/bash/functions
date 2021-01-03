@@ -27,5 +27,5 @@ sync-overlay-with-msg () {
 }
 
 get-iso-week() {
-    echo $(echo 'import datetime; print(datetime.datetime.now().isocalendar()[1], end="")' | python)
+    echo $(echo 'import datetime; print(datetime.datetime.now().isocalendar()[1], end="")' | python3)
 }
