@@ -54,15 +54,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -92,19 +83,26 @@ source $HOME/.cargo/env
 # Bash-it configuration
 ########################
 
-
 export PATH=$PATH:$HOME/.local/bin
-
 
 source $HOME/.functions
 source $HOME/.variables
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
 
 # Path to the bash it configuration
 export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='bobby-python'
+export BASH_IT_THEME=
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
@@ -161,9 +159,9 @@ export PATH=$PATH:$UTILS/sh:$UTILS/py:$GOPATH/bin:$HOME/.local/bin
 # # Virtualenv
 # ####
 export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/vitualenvwrapper.sh
+export VIRTUALENVWRAPPER_SCRIPT=$(find /usr/bin /bin -name "virtualenvwrapper.sh")
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-# source /bin/virtualenvwrapper.sh
+source ${VIRTUALENVWRAPPER_SCRIPT}
 
 # ####
 # #Dotfiles git repo alias
@@ -177,15 +175,15 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # Wallpaper directory
 
 # Override .bash_it/themes/base.theme.bash
-function py_interp_prompt {
-  py_version=$(python --version 2>&1 | awk '{print " Py-"$2;}') || return
-  echo -e "${PYTHON_THEME_PROMPT_PREFIX}${py_version}${PYTHON_THEME_PROMPT_SUFFIX}"
-}
+# function py_interp_prompt {
+#   py_version=$(python --version 2>&1 | awk '{print " Py-"$2;}') || return
+#   echo -e "${PYTHON_THEME_PROMPT_PREFIX}${py_version}${PYTHON_THEME_PROMPT_SUFFIX}"
+# }
 
 # Override .bash_it/themes/colors.theme.bash
-function prompt_command() {
-    PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
-}
+# function prompt_command() {
+#     PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
+# }
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

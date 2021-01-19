@@ -4,10 +4,14 @@ add_newline = true
 [username]
 disabled = false
 
+[directory]
+prefix = "  in "
+
 [character]      # The name of the module we are configuring is "character"
-symbol = "➜"     # The "symbol" segment is being set to "➜"
-err_symbol = "✗"
+symbol = " ➜"     # The "symbol" segment is being set to "➜"
+err_symbol = " ✗"
 use_symbol_for_status = true
+vicmd_symbol = " ❮"
 
 [python]
 symbol = "Py-"

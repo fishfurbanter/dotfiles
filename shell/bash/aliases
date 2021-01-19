@@ -42,3 +42,5 @@ alias oldpwd="cd $OLDPWD"
 alias edit-assh='vim ~/.ssh/assh.yml'
 alias reload-assh='assh config build > ~/.ssh/config'
 alias wq="wmctrl -r 'Alacritty' -b toggle,fullscreen"
+alias startverbosex='startx -- -logverbose 6'
+alias edit-newsboat='nvim ~/.newsboat/urls'

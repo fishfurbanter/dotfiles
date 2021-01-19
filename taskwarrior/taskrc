@@ -14,7 +14,7 @@
 data.location=~/.task
 
 # Color theme (uncomment one to use)
-include ~/.taskwarrior.theme
+#include ~/.taskwarrior.theme
 #include /usr/share/task/rc/light-256.theme
 #include /usr/share/task/rc/dark-16.theme
 #include /usr/share/task/rc/dark-256.theme
@@ -25,6 +25,11 @@ include ~/.taskwarrior.theme
 #include /usr/share/task/rc/dark-yellow-green.theme
 #include /usr/share/task/rc/dark-gray-256.theme
 #include /usr/share/task/rc/dark-gray-blue-256.theme
-#include /usr/share/task/rc/solarized-dark-256.theme
+include /usr/share/task/rc/solarized-dark-256.theme
 #include /usr/share/task/rc/solarized-light-256.theme
 #include /usr/share/task/rc/no-color.theme
+taskd.certificate=\/home\/andecy\/.task\/andecy.cert.pem
+taskd.key=\/home\/andecy\/.task\/andecy.key.pem
+taskd.ca=\/home\/andecy\/.task\/ca.cert.pem
+taskd.server=taskd.coregen.io:53589
+taskd.credentials=Coregen\/Andecy\/2de71ef0-7c0f-4b9e-9555-3ee01a3c11fb
