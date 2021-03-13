@@ -7,27 +7,65 @@ windows:
   panes:
     - awskeys export default
 - window_name: blog
-  start_directory:  ${PROJECT_ROOT}/Projects/coregen-blog
+  start_directory: ${PROJECT_ROOT}/coregen/coregen-blog
   layout: main-vertical
   options:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon coregen-blog-env
       - vim .
-    - ./view.sh
+    - shell_command:
+      - hugo serve --buildDrafts
 - window_name: coregen
-  start_directory: ${PROJECT_ROOT}/Projects/coregen
+  start_directory: ${PROJECT_ROOT}/coregen/coregen
   layout: main-vertical
   options:
     main-pane-width: 150
   panes:
     - shell_command:
-      - workon coregen-env
       - vim .
     -
-- window_name: kubernetes
-  start_directory: ${PROJECT_ROOT}
+- window_name: techbox
+  start_directory: ${PROJECT_ROOT}/coregen/techbox
+  layout: main-vertical
+  options:
+    main-pane-width: 150
   panes:
     - shell_command:
-      -
+      - vim .
+    -
+- window_name: infra
+  start_directory: ${PROJECT_ROOT}/coregen/infra
+  panes:
+    - shell_command:
+      - vim .
+- window_name: openbalkans
+  start_directory: ${PROJECT_ROOT}/coregen/openbalkans
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    - shell_command:
+      - workon openbalkans-env
+      - vim .
+    -
+- window_name: corax
+  start_directory: ${PROJECT_ROOT}/coregen/corax
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    - shell_command:
+      - workon corax-env
+      - vim .
+    -
+- window_name: tengu
+  start_directory: ${PROJECT_ROOT}/coregen/tengu
+  layout: main-vertical
+  options:
+    main-pane-width: 150
+  panes:
+    - shell_command:
+      - workon tengu-env
+      - vim .
+    -

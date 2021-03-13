@@ -1,17 +1,24 @@
-## Andecy64's Dotfiles!
+## Andecy64's Dotfiles
 
+## Software
 
-### Required environment variables
-
-GIT_COMMITTER_EMAIL= <br/>
-GIT_COMMITTER_NAME= <br/>
-GITHUB_TOKEN= <br/>
-
-### Required packages / files
-
-virtualenvwrapper
-virtualenv
-
+|Slot               |Application      |Configuration|GUI   |Automation|Terminal|
+|-------------------|-----------------|-------------|------|----------|--------|
+|Window Manager     |Xmonad           |Dotfiles     |Xmonad|✗         |✗       |
+|Password Manager   |Gopass           |✗            |rofi  |✗         |✓       |
+|Presentations      |Marp             |✗            |✗     |✗         |✓       |
+|Document Viewer    |zathura/calibre  |✗            |✓     |✗         |✗       |
+|Web Browser        |Qutebrowser      |✗            |✓     |✗         |✗       |
+|Console Web Browser|w3m              |✗            |✗     |✗         |✓       |
+|Shell              |Alacritty        |✗            |✗     |✗         |✓       |
+|IRC                |weechat          |Dotfiles     |✗     |✗         |✓       |
+|Console Mastodon   |toot             |             |      |          |        |
+|Whatsapp           |Whatsapp-on-linux|             |      |          |        |
+|Telegram           |Telegram-desktop |             |      |          |        |
+|Office Suit        |Libreoffice      |             |      |          |        |
+|Calendar           |khal             |             |      |          |        |
+|Contacts           |khard            |             |      |          |        |
+|Cal/Card DAV       |Radicale         |             |      |          |        |
 
 #### Planned changes:
 - [ ] All configurations should be in one branch.

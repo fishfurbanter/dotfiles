@@ -21,3 +21,6 @@
 [user]
 	email = 19807724+andecy64@users.noreply.github.com
 	name = Barak Avrahami
+
+[include]
+    path = ~/.gitconfig-extra

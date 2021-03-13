@@ -1,18 +1,13 @@
-session_name: home
+session_name: main
 windows:
+- window_name: Shell
+  panes:
+    -
+- window_name: NuShell
+  panes:
+    - nu
 - window_name: irc
+  start_directory: ${HOME}
   panes:
     - shell_command:
-      - "weechat"
-
-- window_name: xonsh
-  panes:
-    - shell_command:
-      - workon xonsh
-      - "xonsh"
-
-- window_name: dotfiles
-  panes:
-    - shell_command:
-      - cd $HOME/.dotfiles
-      - vim .
+      - weechat

@@ -4,9 +4,6 @@ add_newline = true
 [username]
 disabled = false
 
-[directory]
-prefix = "  in "
-
 [character]      # The name of the module we are configuring is "character"
 symbol = " ➜"     # The "symbol" segment is being set to "➜"
 err_symbol = " ✗"

@@ -21,9 +21,7 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux/tmuxp.projects.yaml: tmux/tmuxp.projects.yaml
     ~/.tmux/tmuxp.home.yaml: tmux/tmuxp.home.yaml
-    ~/.tmux/tmuxp.ansible.yaml: tmux/tmuxp.ansible.yaml
-    ~/.tmux/tmuxp.openbalkans.yaml: tmux/tmuxp.openbalkans.yaml
-    ~/.tmux/tmuxp.virtual.yaml: tmux/tmuxp.virtual.yaml
+    ~/.tmux/tmuxp.monitoring.yaml: tmux/tmuxp.monitoring.yaml
     ~/.tmux/airline-dracula.tmux: tmux/airline-dracula.tmux
     # Shell
     ~/.bash_profile: shell/bash/bash_profile
@@ -53,6 +51,9 @@
     ~/.config/sxhkd/sxhkdrc: xorg/sxhkdrc
     # Starship
     ~/.config/starship.toml: starship/starship.toml
+    ~/.local/bin/monitor-config: xorg/monitor-config.sh 
+    ~/.xmonad/xmonad.hs: xmonad/xmonad.hs
+    ~/.config/polybar/config: polybar/config
 
 - create:
     - ~/.config/
@@ -62,6 +63,7 @@
     - ~/.config/wtf
     - ~/.bash_completion.d
     - ~/.config/qutebrowser
+    - ~/.xmonad
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -85,13 +85,13 @@ source $HOME/.cargo/env
 
 export PATH=$PATH:$HOME/.local/bin
 
-source $HOME/.functions
-source $HOME/.variables
+if [ -f ~/.functions ]; then
+        . ~/.functions
+fi
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+if [ -f ~/.variables ]; then
+        . ~/.variables
+fi
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
@@ -143,31 +143,6 @@ EDITOR="$VISUAL"
 export GOPATH="$HOME/.go"
 export PATH=$PATH:$UTILS/sh:$UTILS/py:$GOPATH/bin:$HOME/.local/bin
 
-#############
-# Darwin is no more!
-# ####
-# # Platform specific configuration
-# ####
-# if [[ "$PLATFORM" == "Darwin" ]]
-# then
-#         source $HOME/.bashrc_osx
-# else
-#         source $HOME/.bashrc_archlinux
-# fi
-
-# ####
-# # Virtualenv
-# ####
-export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_SCRIPT=$(find /usr/bin /bin -name "virtualenvwrapper.sh")
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source ${VIRTUALENVWRAPPER_SCRIPT}
-
-# ####
-# #Dotfiles git repo alias
-# ####
-# alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-
 
 ####
 # Copied from .bash_profile
@@ -201,14 +176,7 @@ source $HOME/.aliases
 export TASKWARRIOR_DATA_DIR=$HOME/.task
 # task-sync() { repo-sync $TASKWARRIOR_DATA_DIR }
 
-# Latex - NO LATEX FOR YOU!
-# export MANPATH=$MANPATH:/usr/local/texlive/2019/texmf-dist/doc/man
-# export INFOPATH=$INFOPATH:/usr/local/texlive/2019/texmf-dist/doc/info
-# export PATH=$PATH:/usr/local/texlive/2019/bin/x86_64-linux
-
 export NODE_PATH=$HOME/.npm
-
-export $(dbus-launch)
 
 # Starship
 export STARSHIP_CONFIG=${HOME}/.config/starship.toml
@@ -226,8 +194,9 @@ export AWS_VAULT_BACKEND=pass
 # Kubectl
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+export AWS_VAULT_BACKEND=pass
+
+export PROJECT_ROOT=~/Projects
+
+# All python virtualenv and pyenv configuration removed
+# Will be using docker to build python software from now on

@@ -32,3 +32,13 @@ export GOPATH=${HOME}/.go
 # VPN
 ####
 export OPENVPN_PROFILE_DIR=~/.openvpn
+
+####
+# Monitors
+# Colon delimited, should be arranged in order from left to right
+####
+
+MONITORS=DP-2:HDMI-1:DP-1
+MONITOR_LEFT=$(echo $MONITORS | cut -d ':' -f 1)
+MONITOR_MAIN=$(echo $MONITORS | cut -d ':' -f 2)
+MONITOR_RIGHT=$(echo $MONITORS | cut -d ':' -f 3)

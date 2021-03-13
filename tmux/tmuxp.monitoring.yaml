@@ -1,0 +1,7 @@
+session_name: Monitoring
+windows:
+- window_name: wtf
+  start_directory: ${HOME}
+  panes:
+    - shell_command:
+      - wtfutil
