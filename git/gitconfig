@@ -19,8 +19,11 @@
     remote = green
 
 [user]
-	email = 19807724+andecy64@users.noreply.github.com
+	email = baraka@coregen.io
 	name = Barak Avrahami
+	signingkey = BAA47D5EE00CB8A5
 
 [include]
     path = ~/.gitconfig-extra
+[commit]
+	gpgsign = true

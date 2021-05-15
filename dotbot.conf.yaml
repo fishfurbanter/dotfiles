@@ -54,6 +54,7 @@
     ~/.local/bin/monitor-config: xorg/monitor-config.sh 
     ~/.xmonad/xmonad.hs: xmonad/xmonad.hs
     ~/.config/polybar/config: polybar/config
+    ~/.config/stig/rc: stig/rc
 
 - create:
     - ~/.config/

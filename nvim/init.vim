@@ -50,6 +50,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'plasticboy/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'jvirtanen/vim-hcl'
 
 " FZF and display mode
 Plug 'junegunn/goyo.vim'

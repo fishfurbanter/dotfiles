@@ -44,3 +44,7 @@ alias reload-assh='assh config build > ~/.ssh/config'
 alias wq="wmctrl -r 'Alacritty' -b toggle,fullscreen"
 alias startverbosex='startx -- -logverbose 6'
 alias edit-newsboat='nvim ~/.newsboat/urls'
+alias torrent-clipboard='transmission-remote $TRANSMISSION_HOST:$TRANSMISSION_PORT --add "$(xclip -sel clipboard -o)"'
+alias maimi='maim -s /dev/stdout | xclip -sel clipboard -i'
+alias task-acq='task project:Acquisition'
+alias task-infra='task project:Infrastructure'

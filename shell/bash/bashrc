@@ -200,3 +200,5 @@ export PROJECT_ROOT=~/Projects
 
 # All python virtualenv and pyenv configuration removed
 # Will be using docker to build python software from now on
+
+export GPG_TTY=$(tty)

@@ -2,4 +2,4 @@ shift + Print
         flameshot gui -p ~/Screenshots
 
 alt + r
-        rofi -show combine
+        rofi -show combi

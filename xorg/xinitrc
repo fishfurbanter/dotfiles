@@ -5,9 +5,9 @@ setxkbmap -model pc105 -layout us,il -option grp:win_space_toggle
 ####exec qtile
 feh --bg-scale ~/.wallpapers/*
 # status &
-# sxhkd &
 #### xscreensaver -nosplash&
 monitor-config
-# exec dwm
-xsetroot -cursor_name left_ptr &
-exec xmonad
+exec dwm
+# xsetroot -cursor_name left_ptr &
+# exec xmonad
+# exec awesome
