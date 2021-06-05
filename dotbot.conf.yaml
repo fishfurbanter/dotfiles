@@ -55,6 +55,13 @@
     ~/.xmonad/xmonad.hs: xmonad/xmonad.hs
     ~/.config/polybar/config: polybar/config
     ~/.config/stig/rc: stig/rc
+    # Awesome
+    ~/.config/awesome/rc.lua: awesome/rc.lua
+    # Rofi
+    ~/.config/rofi/config: rofi/config
+    ~/.config/rofi/config.rasi: rofi/config.rasi
+    ~/.config/rofi/themes/slate.rasi: rofi/themes/slate.rasi
+
 
 - create:
     - ~/.config/
@@ -65,6 +72,8 @@
     - ~/.bash_completion.d
     - ~/.config/qutebrowser
     - ~/.xmonad
+    - ~/.config/rofi
+    - ~/.config/rofi/themes
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

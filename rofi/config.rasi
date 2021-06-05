@@ -1,0 +1,18 @@
+/* rofi.theme: /home/andecy/.config/rofi/themes/slate.rasi */
+configuration {
+ combi-modi: "window,drun,ssh";
+ theme: "themes/slate";
+ font: "firacode 22px";
+ show-icons: true;
+ icon-theme: "Papirus";
+ terminal: "alacritty";
+ drun-match-fields: "name,generic,exec,categories";
+ display-drun: "Æ";
+ display-run: "";
+ display-window: "";
+ display-ssh: "~#";
+ }
+
+window {
+  width: 50%;
+ }
