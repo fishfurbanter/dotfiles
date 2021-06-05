@@ -97,21 +97,11 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-# Path to the bash it configuration
-export BASH_IT="$HOME/.bash_it"
-
-# Lock and Load a custom theme file
-# location /.bash_it/themes/
-export BASH_IT_THEME=
-
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
 # Change this to your console based IRC client of choice.
 export IRC_CLIENT='weechat'
-
-# Set this to the command you use for todo.txt-cli
-export TODO="t"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
@@ -121,19 +111,11 @@ export SCM_CHECK=true
 # Will otherwise fall back on $HOSTNAME.
 #export SHORT_HOSTNAME=$(hostname -s)
 
-
-# (Advanced): Uncomment this to make Bash-it reload itself automatically
-# after enabling or disabling aliases, plugins, and completions.
-# export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
-
-# Load Bash It
-source $BASH_IT/bash_it.sh
-
 ####
 # Set vim as the default shell editor
 ####
-VISUAL=nvim
-EDITOR="$VISUAL"
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 
 ####
@@ -144,22 +126,7 @@ export GOPATH="$HOME/.go"
 export PATH=$PATH:$UTILS/sh:$UTILS/py:$GOPATH/bin:$HOME/.local/bin
 
 
-####
-# Copied from .bash_profile
-####
-# Wallpaper directory
-
-# Override .bash_it/themes/base.theme.bash
-# function py_interp_prompt {
-#   py_version=$(python --version 2>&1 | awk '{print " Py-"$2;}') || return
-#   echo -e "${PYTHON_THEME_PROMPT_PREFIX}${py_version}${PYTHON_THEME_PROMPT_SUFFIX}"
-# }
-
-# Override .bash_it/themes/colors.theme.bash
-# function prompt_command() {
-#     PS1="\n${bold_blue}$(python_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_char)${green}$(scm_prompt_info) ${green}→${reset_color} "
-# }
-
+# FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Aliases
@@ -191,14 +158,15 @@ eval "$(zoxide init bash)"
 export AWS_VAULT_PROMPT=terminal
 export AWS_VAULT_BACKEND=pass
 
-# Kubectl
+# Kubectl plugins
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export AWS_VAULT_BACKEND=pass
-
 export PROJECT_ROOT=~/Projects
 
 # All python virtualenv and pyenv configuration removed
 # Will be using docker to build python software from now on
 
 export GPG_TTY=$(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
