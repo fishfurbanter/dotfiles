@@ -61,6 +61,7 @@
     ~/.config/rofi/config: rofi/config
     ~/.config/rofi/config.rasi: rofi/config.rasi
     ~/.config/rofi/themes/slate.rasi: rofi/themes/slate.rasi
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml 
 
 
 - create:
@@ -74,6 +75,7 @@
     - ~/.xmonad
     - ~/.config/rofi
     - ~/.config/rofi/themes
+    - ~/.config/alacritty
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
